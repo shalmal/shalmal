@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalmal Lande — Performance Marketing Professional</title>
+<meta name="description" content="Shalmal Lande — Performance marketing professional in agri-tech & quick commerce. Retention, lifecycle automation, and campaign growth for KisanKonnect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#121A2B;
+    --ink-2:#1A2438;
+    --ink-3:#26314A;
+    --paper:#F2EFE6;
+    --muted:#9AA5B8;
+    --gold:#F2B705;
+    --green:#2BB673;
+    --line:rgba(242,239,230,0.12);
+    --line-strong:rgba(242,239,230,0.22);
+    --maxw:1040px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--green);
+  }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(18,26,43,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+  }
+  .nav-mark{
+    font-family:'Fraunces', serif; font-weight:700; font-size:18px;
+    text-decoration:none; letter-spacing:.01em;
+  }
+  .nav-links{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+  .nav-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; text-transform:uppercase; letter-spacing:.08em;
+    text-decoration:none; color:var(--muted);
+    transition:color .15s ease;
+  }
+  .nav-links a:hover{color:var(--paper);}
+  .nav-toggle{display:none;}
+
+  @media (max-width:640px){
+    .nav-links{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{padding:88px 0 56px;}
+  .hero h1{
+    font-family:'Fraunces', serif;
+    font-weight:900;
+    font-size:clamp(2.6rem, 6vw, 4.4rem);
+    line-height:1.02;
+    margin:18px 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .hero h1 em{
+    font-style:italic; font-weight:400; color:var(--gold);
+  }
+  .hero .role{
+    font-family:'Fraunces', serif;
+    font-weight:500; font-style:italic;
+    font-size:clamp(1.15rem, 2.4vw, 1.5rem);
+    color:var(--paper); opacity:.86;
+    margin:0 0 26px;
+    max-width:640px;
+  }
+  .hero p.lede{
+    max-width:600px; color:var(--muted); font-size:16px; margin:0 0 34px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:56px;}
+  .btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px; letter-spacing:.03em;
+    padding:12px 20px; border-radius:2px;
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+    transition:transform .15s ease, background .15s ease, border-color .15s ease;
+    border:1px solid var(--line-strong);
+  }
+  .btn-primary{background:var(--gold); color:var(--ink); border-color:var(--gold); font-weight:600;}
+  .btn-primary:hover{transform:translateY(-1px); background:#ffc61a;}
+  .btn-secondary{color:var(--paper); background:transparent;}
+  .btn-secondary:hover{border-color:var(--paper);}
+
+  /* KPI dashboard strip — signature element */
+  .kpi-strip{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  .kpi-tile{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:22px 20px;
+  }
+  .kpi-value{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    font-size:clamp(1.7rem, 3.2vw, 2.4rem);
+    color:var(--gold);
+    display:flex; align-items:baseline; gap:6px;
+  }
+  .kpi-value .arrow{color:var(--green); font-size:.55em;}
+  .kpi-label{
+    font-size:13px; color:var(--muted); margin-top:8px; max-width:20ch;
+  }
+  @media (max-width:900px){
+    .kpi-strip{grid-template-columns:repeat(3,1fr);}
+  }
+  @media (max-width:560px){
+    .kpi-strip{grid-template-columns:repeat(2,1fr);}
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:72px 0;}
+  .section-head{
+    display:flex; align-items:baseline; gap:16px; margin-bottom:36px;
+    border-bottom:1px solid var(--line); padding-bottom:16px;
+  }
+  .section-head h2{
+    font-family:'Fraunces', serif; font-weight:700; font-size:28px; margin:0;
+  }
+  .section-head .eyebrow{margin-left:auto;}
+
+  /* ---------- SNAPSHOT ---------- */
+  .snapshot p{max-width:700px; color:var(--paper); font-size:16.5px;}
+  .snapshot p + p{margin-top:16px; color:var(--muted);}
+
+  /* ---------- EXPERIENCE ---------- */
+  .role-card{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:28px;
+    padding:28px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .role-card:first-of-type{padding-top:0;}
+  .role-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px; color:var(--green); letter-spacing:.02em;
+    padding-top:4px;
+  }
+  .role-title{font-size:19px; font-weight:600; margin:0 0 4px;}
+  .role-company{color:var(--muted); font-size:14px; margin:0 0 16px;}
+  .role-card ul{margin:0; padding-left:18px; color:var(--paper);}
+  .role-card li{margin-bottom:9px; font-size:15px;}
+  .role-card li:last-child{margin-bottom:0;}
+  .tool-tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:18px;}
+  .tool-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line-strong); padding:4px 10px; border-radius:2px;
+  }
+
+  @media (max-width:640px){
+    .role-card{grid-template-columns:1fr;}
+  }
+
+  .ops-heading{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; text-transform:uppercase; letter-spacing:.1em;
+    color:var(--muted); margin:44px 0 4px;
+  }
+  .ops-sub{color:var(--muted); font-size:13.5px; margin:0 0 18px;}
+  .ops-row{
+    display:grid; grid-template-columns:170px 1fr; gap:28px;
+    padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .ops-row:last-child{border-bottom:none;}
+  .ops-date{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--muted);}
+  .ops-title{font-size:14.5px; font-weight:600; margin:0 0 4px; color:var(--paper); opacity:.92;}
+  .ops-desc{font-size:13.5px; color:var(--muted); margin:0;}
+  @media (max-width:640px){
+    .ops-row{grid-template-columns:1fr;}
+  }
+
+  /* ---------- SKILLS ---------- */
+  .skill-group{margin-bottom:36px;}
+  .skill-group:last-child{margin-bottom:0;}
+  .skill-group h3{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; text-transform:uppercase; letter-spacing:.1em;
+    margin:0 0 16px;
+  }
+  .skill-group.primary h3{color:var(--gold);}
+  .skill-group.secondary h3{color:var(--muted);}
+  .tag-cloud{display:flex; flex-wrap:wrap; gap:10px;}
+  .tag{
+    padding:8px 14px; border-radius:2px; font-size:13.5px;
+  }
+  .skill-group.primary .tag{border:1px solid rgba(242,183,5,0.45); color:var(--paper);}
+  .skill-group.secondary .tag{border:1px solid var(--line-strong); color:var(--muted);}
+
+  /* ---------- EDUCATION ---------- */
+  .edu-row{
+    display:grid; grid-template-columns:1fr 140px; gap:16px;
+    padding:20px 0; border-bottom:1px solid var(--line);
+  }
+  .edu-row:last-child{border-bottom:none;}
+  .edu-degree{font-size:15.5px; font-weight:600; margin:0 0 4px;}
+  .edu-school{font-size:13.5px; color:var(--muted); margin:0;}
+  .edu-meta{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--green);
+    text-align:right;
+  }
+  .edu-meta span{display:block; color:var(--muted); margin-top:2px;}
+  @media (max-width:560px){
+    .edu-row{grid-template-columns:1fr; }
+    .edu-meta{text-align:left; margin-top:6px;}
+  }
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:64px 0 40px;
+  }
+  footer h2{
+    font-family:'Fraunces', serif; font-weight:700;
+    font-size:clamp(1.8rem,4vw,2.6rem); margin:0 0 28px; max-width:520px;
+  }
+  .contact-grid{
+    display:flex; flex-wrap:wrap; gap:32px; margin-bottom:40px;
+  }
+  .contact-item{font-family:'IBM Plex Mono', monospace; font-size:13.5px;}
+  .contact-item span{display:block; color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px;}
+  .contact-item a{text-decoration:none; border-bottom:1px solid var(--line-strong);}
+  .contact-item a:hover{border-color:var(--gold); color:var(--gold);}
+  .foot-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    font-size:12px; color:var(--muted); padding-top:24px; border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap nav-row">
+    <a class="nav-mark" href="#top">S. Lande</a>
+    <ul class="nav-links">
+      <li><a href="#snapshot">Snapshot</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Performance Marketing · Quick Commerce · Agri-Tech</p>
+    <h1>Shalmal Lande</h1>
+    <p class="role">Turning subscriber data into subscription growth<em>,</em> one campaign at a time.</p>
+    <p class="lede">I run performance and retention marketing for KisanKonnect's dairy subscription business — lifecycle automation, campaign planning, and funnel diagnostics for a quick-commerce audience that expects same-day answers.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="mailto:shalmallande@gmail.com">Email me →</a>
+      <a class="btn btn-secondary" href="https://linkedin.com/in/shalmal-lande-428341118" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="kpi-strip" id="kpi-strip">
+      <div class="kpi-tile">
+        <div class="kpi-value"><span class="arrow">▲</span><span class="kpi-num" data-target="23">0</span>%</div>
+        <div class="kpi-label">WoW growth in subscription orders from Day-0 onboarding offers</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-value"><span class="arrow">▲</span><span class="kpi-num" data-target="9">0</span>%</div>
+        <div class="kpi-label">MoM growth in active subscriptions</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-value"><span class="arrow">▲</span><span class="kpi-num" data-target="73">0</span>%</div>
+        <div class="kpi-label">MoM regular retention on lifecycle campaigns</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-value"><span class="arrow">▲</span><span class="kpi-num" data-target="38">0</span>%</div>
+        <div class="kpi-label">MoM reactivation retention for lapsed customers</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="kpi-value"><span class="arrow">▲</span><span class="kpi-num" data-target="77">0</span>%</div>
+        <div class="kpi-label">M1 retention on the subscription model, Q1 FY2026–27</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="snapshot wrap" id="snapshot">
+    <div class="section-head">
+      <h2>Snapshot</h2>
+      <span class="eyebrow">Summary</span>
+    </div>
+    <p>I've spent the last two-plus years owning performance and retention marketing for KisanKonnect's app and subscription business — briefing creative, automating lifecycle journeys in CleverTap and MoEngage, and reading cohort-level funnels closely enough to catch degrowth before it shows up in revenue.</p>
+    <p>Before that, I built my analytical instincts running supply chain operations for the same company — cluster dashboards, KPI tracking, and cross-functional coordination that now shapes how I read a campaign's numbers. I'm currently pursuing an MBA in Supply Chain Management &amp; Operations, and looking to grow further as a performance marketer.</p>
+  </section>
+
+  <section class="wrap" id="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <span class="eyebrow">Campaign Log</span>
+    </div>
+
+    <div class="role-card">
+      <div class="role-date">Mar 2026 — Present</div>
+      <div>
+        <p class="role-title">Performance Marketing Executive</p>
+        <p class="role-company">KisanKonnect Safe Food Pvt. Ltd. — Navi Mumbai</p>
+        <ul>
+          <li>Manage end-to-end performance marketing for KisanKonnect's dairy subscription model, driving customer acquisition and retention.</li>
+          <li>Send targeted push notifications and in-app messages to new, active, and low-wallet-balance subscribers to keep orders uninterrupted.</li>
+          <li>Own the app's in-app section — banners, flyers, creative and content briefing.</li>
+          <li>Automate customer journeys in CleverTap for personalized lifecycle experiences.</li>
+          <li>Plan and run Day-0 onboarding offers behind 23% WoW growth in subscription orders and 9% MoM growth in active subscriptions.</li>
+          <li>Monitor store-wise launch-to-conversion funnels, flag cohort-level degrowth, and coordinate targeted campaigns to recover it.</li>
+          <li>Drove 77% M1 retention on the subscription model in Q1 FY2026–27 through onboarding and early lifecycle optimization.</li>
+        </ul>
+        <div class="tool-tags">
+          <span class="tool-tag">CleverTap</span>
+          <span class="tool-tag">Google Sheets</span>
+          <span class="tool-tag">Excel</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="role-card">
+      <div class="role-date">Nov 2023 — May 2024</div>
+      <div>
+        <p class="role-title">Performance Marketing Executive</p>
+        <p class="role-company">KisanKonnect Safe Food Pvt. Ltd. — Navi Mumbai</p>
+        <ul>
+          <li>Led consumer retention and reactivation, hitting 73% MoM regular retention and 38% MoM reactivation retention.</li>
+          <li>Designed and ran targeted campaigns for consumer reactivation and lifecycle management.</li>
+          <li>Managed end-to-end website and app operations — product sequencing, banners, UX flow.</li>
+          <li>Took KisanKonnect live on the ONDC e-commerce platform in a single day, full product listing included.</li>
+          <li>Planned weekly promotional offers and managed offer cost and budget against sales performance.</li>
+          <li>Led creative and content briefing for digital campaigns.</li>
+        </ul>
+        <div class="tool-tags">
+          <span class="tool-tag">MoEngage</span>
+          <span class="tool-tag">CleverTap</span>
+          <span class="tool-tag">Google Sheets</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="ops-heading">Operational foundation</p>
+    <p class="ops-sub">Two supply chain roles at the same company, condensed — the analytical groundwork behind the marketing work above.</p>
+
+    <div class="ops-row">
+      <div class="ops-date">May 2024 — Sep 2025</div>
+      <div>
+        <p class="ops-title">Supply Chain Executive</p>
+        <p class="ops-desc">Rebuilt operations after a compliance incident — lifted on-time delivery from 82% to 94% and cut RTO from 1.5% to 0.5% across 10,000+ daily shipments, while self-learning Tableau and Power BI for MIS reporting.</p>
+      </div>
+    </div>
+    <div class="ops-row">
+      <div class="ops-date">Sep 2021 — Nov 2023</div>
+      <div>
+        <p class="ops-title">Junior Executive — Supply Chain</p>
+        <p class="ops-desc">Planned delivery routes across Mumbai and Pune and supported cluster sales as Sales Coordinator — the dashboard and stakeholder-management habits that carried into performance marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <span class="eyebrow">Toolkit</span>
+    </div>
+
+    <div class="skill-group primary">
+      <h3>Performance marketing &amp; growth</h3>
+      <div class="tag-cloud">
+        <span class="tag">Retention &amp; Performance Marketing</span>
+        <span class="tag">Customer Journey Automation</span>
+        <span class="tag">Campaign Planning &amp; Execution</span>
+        <span class="tag">CleverTap</span>
+        <span class="tag">MoEngage</span>
+        <span class="tag">Creative &amp; Content Briefing</span>
+        <span class="tag">ONDC Platform Management</span>
+        <span class="tag">Funnel &amp; Cohort Analysis</span>
+      </div>
+    </div>
+
+    <div class="skill-group secondary">
+      <h3>Supporting: analytics &amp; operations</h3>
+      <div class="tag-cloud">
+        <span class="tag">Excel &amp; Google Sheets (Advanced)</span>
+        <span class="tag">Tableau &amp; Power BI</span>
+        <span class="tag">SQL (Basic)</span>
+        <span class="tag">KPI Tracking &amp; MIS Reporting</span>
+        <span class="tag">AI-based Reporting Automation</span>
+        <span class="tag">Supply Chain &amp; 3PL Coordination</span>
+        <span class="tag">Process Improvement &amp; SOPs</span>
+        <span class="tag">Cross-functional Collaboration</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="education">
+    <div class="section-head">
+      <h2>Education</h2>
+      <span class="eyebrow">Credentials</span>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <p class="edu-degree">MBA — Supply Chain Management &amp; Operations</p>
+        <p class="edu-school">Sir Visvesaraya Institute of Technology, Nashik · Savitribai Phule Pune University</p>
+      </div>
+      <div class="edu-meta">Pursuing<span>2024 – 2026</span></div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <p class="edu-degree">B.Com — Banking &amp; Finance</p>
+        <p class="edu-school">Arts, Commerce &amp; Science College, Shrirampur · SPPU</p>
+      </div>
+      <div class="edu-meta">CGPA 8.32/10<span>2019 – 2022</span></div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <p class="edu-degree">Higher Secondary Certificate</p>
+        <p class="edu-school">C.D. Jain College of Commerce, Shrirampur · Maharashtra State Board</p>
+      </div>
+      <div class="edu-meta">75.54%<span>2014 – 2016</span></div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <p class="edu-degree">Secondary School Certificate</p>
+        <p class="edu-school">St. Vincent De Paul High School, Shrirampur · Maharashtra State Board</p>
+      </div>
+      <div class="edu-meta">66.40%<span>2014</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk about growing your subscriber base.</h2>
+    <div class="contact-grid">
+      <div class="contact-item"><span>Email</span><a href="mailto:shalmallande@gmail.com">shalmallande@gmail.com</a></div>
+      <div class="contact-item"><span>Phone</span><a href="tel:+919136284292">+91 91362 84292</a></div>
+      <div class="contact-item"><span>LinkedIn</span><a href="https://linkedin.com/in/shalmal-lande-428341118" target="_blank" rel="noopener">shalmal-lande-428341118</a></div>
+      <div class="contact-item"><span>Location</span>Navi Mumbai, Maharashtra</div>
+    </div>
+    <div class="foot-bottom">
+      <span>Shalmal Sandeep Lande</span>
+      <span>Updated July 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Count-up animation for the KPI dashboard strip, respecting reduced motion.
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var nums = document.querySelectorAll('.kpi-num');
+
+    function animate(el){
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      if(reduce){ el.textContent = target; return; }
+      var start = null;
+      var duration = 900;
+      function step(ts){
+        if(!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target);
+        if(progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    if('IntersectionObserver' in window){
+      var seen = false;
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting && !seen){
+            seen = true;
+            nums.forEach(animate);
+            observer.disconnect();
+          }
+        });
+      }, {threshold:0.4});
+      var strip = document.getElementById('kpi-strip');
+      if(strip) observer.observe(strip);
+    } else {
+      nums.forEach(animate);
+    }
+  })();
+</script>
+
+</body>
+</html>
