@@ -1,1502 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shalmal Lande — Performance Marketing &amp; Growth</title>
+<meta name="description" content="Shalmal Lande is a Performance Marketing professional building retention, lifecycle and growth systems — grounded in four years of supply-chain execution." />
 
-<meta charset="UTF-8">
+<!-- Open Graph -->
+<meta property="og:title" content="Shalmal Lande — Building Growth Through Data" />
+<meta property="og:description" content="Performance Marketing professional specializing in retention, lifecycle marketing and CRM automation." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shalmal Lande — Building Growth Through Data" />
+<meta name="twitter:description" content="Performance Marketing professional specializing in retention, lifecycle marketing and CRM automation." />
 
-<title>
-Shalmal Lande | Performance Marketing
-</title>
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shalmal Sandeep Lande",
+  "jobTitle": "Performance Marketing Executive",
+  "worksFor": { "@type": "Organization", "name": "KisanKonnect Safe Food Private Limited" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Navi Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "email": "mailto:shalmallande@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/shalmal-lande-428341118/"]
+}
+</script>
 
-<meta name="description"
-content="Performance Marketing Portfolio of Shalmal Lande">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324402E'/%3E%3Cpath d='M14 40 L24 24 L32 34 L50 16' stroke='%23C1702E' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
-<meta name="author"
-content="Shalmal Lande">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<meta property="og:title"
-content="Turning Data Into Growth">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --ivory:#F7F1E3;
+  --ivory-deep:#EFE6D2;
+  --paper:#FDFAF3;
+  --forest:#24402C;
+  --forest-deep:#152A1C;
+  --forest-mid:#33553B;
+  --beige:#EAE0C6;
+  --ember:#C1702E;
+  --ember-soft:#E3A167;
+  --charcoal:#241F19;
+  --charcoal-soft:#5B564C;
+  --hairline:#E0D5B8;
+  --hairline-strong:#CBBD97;
+  --white:#FFFDF7;
 
-<meta property="og:description"
-content="Performance Marketing • CRM • Analytics">
+  --display:'EB Garamond', Georgia, serif;
+  --body:'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
 
-<link rel="icon"
-href="favicon.ico">
+  --container:1180px;
+  --edge: clamp(20px, 6vw, 64px);
+  --ease: cubic-bezier(.16,.84,.44,1);
+}
 
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+body{
+  margin:0;
+  font-family:var(--body);
+  background:var(--ivory);
+  color:var(--charcoal);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{display:block; max-width:100%;}
+a{color:inherit;}
+button{font-family:inherit;}
+::selection{background:var(--ember-soft); color:var(--forest-deep);}
 
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+.container{
+  width:100%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding-left:var(--edge);
+  padding-right:var(--edge);
+}
+.eyebrow{
+  font-family:var(--body);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ember);
+}
+h1,h2,h3{
+  font-family:var(--display);
+  font-weight:600;
+  margin:0;
+  color:var(--forest-deep);
+  letter-spacing:-0.01em;
+}
+h2{ font-size:clamp(2rem, 4.4vw, 3.1rem); line-height:1.08; }
+h3{ font-size:clamp(1.25rem, 2vw, 1.6rem); line-height:1.2; }
+p{ margin:0; }
+.lede{ font-size:clamp(1.05rem, 1.6vw, 1.25rem); color:var(--charcoal-soft); line-height:1.7; }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-rel="stylesheet">
+.italic-accent{ font-style:italic; color:var(--ember); }
 
-<link rel="stylesheet"
-href="style.css">
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5em;
+  font-family:var(--body);
+  font-weight:700;
+  font-size:.92rem;
+  letter-spacing:.01em;
+  padding:.95em 1.7em;
+  border-radius:100px;
+  border:1.5px solid transparent;
+  cursor:pointer;
+  text-decoration:none;
+  transition:transform .35s var(--ease), background .3s ease, color .3s ease, border-color .3s ease;
+  will-change:transform;
+}
+.btn-primary{ background:var(--forest-deep); color:var(--white); }
+.btn-primary:hover{ background:var(--forest); }
+.btn-ghost{ background:transparent; color:var(--forest-deep); border-color:var(--forest-deep); }
+.btn-ghost:hover{ background:var(--forest-deep); color:var(--white); }
+.btn-on-dark{ background:var(--ember); color:var(--white); }
+.btn-on-dark:hover{ background:var(--ember-soft); }
+.btn-ghost-on-dark{ background:transparent; color:var(--ivory); border-color:rgba(247,241,227,.4); }
+.btn-ghost-on-dark:hover{ background:rgba(247,241,227,.12); border-color:var(--ivory); }
 
+/* Reveal-on-scroll */
+.reveal{ opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.in-view{ opacity:1; transform:translateY(0); }
+.reveal-stagger > *{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-stagger.in-view > *{ opacity:1; transform:translateY(0); }
+.reveal-stagger.in-view > *:nth-child(1){transition-delay:.02s;}
+.reveal-stagger.in-view > *:nth-child(2){transition-delay:.09s;}
+.reveal-stagger.in-view > *:nth-child(3){transition-delay:.16s;}
+.reveal-stagger.in-view > *:nth-child(4){transition-delay:.23s;}
+.reveal-stagger.in-view > *:nth-child(5){transition-delay:.30s;}
+.reveal-stagger.in-view > *:nth-child(6){transition-delay:.37s;}
+.reveal-stagger.in-view > *:nth-child(7){transition-delay:.44s;}
+.reveal-stagger.in-view > *:nth-child(8){transition-delay:.51s;}
+
+/* ============================================================
+   SCROLL PROGRESS + CURSOR GLOW + BACK TO TOP
+   ============================================================ */
+#scroll-progress{
+  position:fixed; top:0; left:0; height:3px; width:0%;
+  background:var(--ember); z-index:9999; transition:width .1s linear;
+}
+#cursor-glow{
+  position:fixed; top:0; left:0; width:420px; height:420px;
+  border-radius:50%; pointer-events:none; z-index:1;
+  background:radial-gradient(circle, rgba(193,112,46,.10) 0%, rgba(193,112,46,0) 70%);
+  transform:translate(-50%,-50%); opacity:0; transition:opacity .4s ease;
+}
+#back-to-top{
+  position:fixed; right:20px; bottom:20px; z-index:500;
+  width:46px; height:46px; border-radius:50%;
+  background:var(--forest-deep); color:var(--ivory);
+  border:none; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(10px);
+  transition:opacity .3s ease, transform .3s ease, visibility .3s;
+  box-shadow:0 8px 24px rgba(21,42,28,.25);
+}
+#back-to-top.show{ opacity:1; visibility:visible; transform:translateY(0); }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+header.nav{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:rgba(247,241,227,.82);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease, background .3s ease;
+}
+header.nav.scrolled{ border-bottom-color:var(--hairline); }
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top:16px; padding-bottom:16px;
+}
+.logo{
+  font-family:var(--display); font-style:italic; font-weight:600;
+  font-size:1.35rem; color:var(--forest-deep); text-decoration:none; letter-spacing:.01em;
+}
+.logo span{ color:var(--ember); }
+.nav-links{ display:none; gap:2.1rem; list-style:none; margin:0; padding:0; align-items:center; }
+.nav-links a{
+  font-size:.88rem; font-weight:600; text-decoration:none; color:var(--charcoal);
+  position:relative; padding-bottom:3px;
+}
+.nav-links a::after{
+  content:""; position:absolute; left:0; right:100%; bottom:0; height:1.5px; background:var(--ember);
+  transition:right .3s var(--ease);
+}
+.nav-links a:hover::after{ right:0; }
+.nav-cta{ display:none; }
+.nav-toggle{
+  background:none; border:none; cursor:pointer; padding:6px; display:flex; flex-direction:column; gap:5px;
+}
+.nav-toggle span{ width:24px; height:2px; background:var(--forest-deep); border-radius:2px; transition:transform .3s ease, opacity .3s ease; }
+.nav-toggle.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2){ opacity:0; }
+.nav-toggle.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+.mobile-menu{
+  position:fixed; inset:0; background:var(--forest-deep); z-index:998;
+  display:flex; flex-direction:column; justify-content:center; padding:0 var(--edge);
+  transform:translateY(-100%); transition:transform .5s var(--ease); 
+}
+.mobile-menu.open{ transform:translateY(0); }
+.mobile-menu ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.1rem; }
+.mobile-menu a{
+  font-family:var(--display); font-size:2.1rem; color:var(--ivory); text-decoration:none; font-weight:500;
+}
+.mobile-menu .mm-cta{ margin-top:2rem; }
+
+@media (min-width:900px){
+  .nav-links{ display:flex; }
+  .nav-cta{ display:inline-flex; }
+  .nav-toggle{ display:none; }
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero{
+  position:relative; padding:150px 0 90px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(193,112,46,.10), transparent 60%),
+    var(--ivory);
+
+
+}
+.hero-grid{ display:grid; gap:2.4rem; align-items:center; }
+.hero-kicker{ display:flex; align-items:center; gap:.7rem; margin-bottom:1.3rem; }
+.hero-kicker .dot{ width:7px; height:7px; border-radius:50%; background:var(--ember); }
+.hero h1{
+  font-size:clamp(2.5rem, 7vw, 4.6rem);
+  line-height:1.04;
+}
+.hero .lede{ margin-top:1.3rem; max-width:52ch; }
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:.9rem; margin-top:2.1rem; }
+.hero-meta{
+  display:flex; gap:2.2rem; margin-top:3rem; flex-wrap:wrap;
+}
+.hero-meta div{ }
+.hero-meta strong{ display:block; font-family:var(--display); font-size:1.5rem; color:var(--forest-deep); }
+.hero-meta span{ font-size:.78rem; color:var(--charcoal-soft); text-transform:uppercase; letter-spacing:.06em; }
+
+.hero-visual{ position:relative; min-height:280px; }
+.hero-avatar{
+  width:min(280px, 60vw); aspect-ratio:1; border-radius:50%;
+  margin:0 auto;
+  background:linear-gradient(155deg, var(--forest-mid), var(--forest-deep));
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--display); font-style:italic; font-size:5rem; color:var(--ivory);
+  position:relative; z-index:2;
+  box-shadow:0 30px 60px -20px rgba(21,42,28,.4);
+
+}
+.route-svg{ position:absolute; inset:-10% -10% auto -10%; height:130%; width:120%; z-index:1; opacity:.85; }
+.route-path{
+  fill:none; stroke:var(--ember-soft); stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:6 10;
+}
+.route-path.grow{ stroke:var(--forest); stroke-width:3; stroke-dasharray:none; }
+.route-draw{ stroke-dasharray:1000; stroke-dashoffset:1000; animation:draw 2.6s var(--ease) forwards .3s; }
+.route-draw2{ stroke-dasharray:1000; stroke-dashoffset:1000; animation:draw 2.6s var(--ease) forwards .9s; }
+@keyframes draw{ to{ stroke-dashoffset:0; } }
+.route-dot{ fill:var(--ember); opacity:0; animation:dotpop .4s ease forwards 2.6s; }
+@keyframes dotpop{ to{opacity:1;} }
+
+@media (min-width:900px){
+  .hero-grid{ grid-template-columns:1.15fr .85fr; gap:3rem; }
+
+
+
+/* ============================================================
+   SECTION shells
+   ============================================================ */
+section{ padding:88px 0; position:relative; }
+.section-head{ max-width:640px; margin-bottom:3rem; }
+.section-head .eyebrow{ margin-bottom:.8rem; display:block; }
+
+/* ABOUT */
+.about{ background:var(--paper); border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+.about-grid{ display:grid; gap:2.6rem; }
+.about-copy p{ margin-bottom:1.3rem; color:var(--charcoal-soft); font-size:1.06rem; line-height:1.75; }
+.about-copy p:last-child{ margin-bottom:0; }
+.pull{
+  border-left:3px solid var(--ember); padding-left:1.2rem; margin:1.8rem 0;
+  font-family:var(--display); font-style:italic; font-size:1.25rem; color:var(--forest-deep);
+}
+@media (min-width:900px){
+  .about-grid{ grid-template-columns:.9fr 1.1fr; }
+}
+
+/* NUMBERS */
+.numbers{ background:var(--forest-deep); color:var(--ivory); }
+.numbers h2, .numbers .section-head p{ color:var(--ivory); }
+.numbers .section-head p{ color:rgba(247,241,227,.7); }
+.kpi-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+  background:rgba(247,241,227,.14); border:1px solid rgba(247,241,227,.14); border-radius:18px; overflow:hidden;
+}
+.kpi-card{ background:var(--forest-deep); padding:2rem 1.4rem; text-align:left; }
+.kpi-num{
+  font-family:var(--display); font-size:clamp(2.1rem, 4vw, 3rem); color:var(--ember-soft); line-height:1;
+  display:flex; align-items:baseline; gap:.15em;
+}
+.kpi-label{ margin-top:.6rem; font-size:.86rem; color:rgba(247,241,227,.75); line-height:1.4; }
+.kpi-rto{ grid-column:1 / 1; display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap; }
+.kpi-rto .arrow{ color:var(--ember-soft); font-family:var(--display); font-size:1.6rem; }
+@media (min-width:700px){
+  .kpi-grid{ grid-template-columns:repeat(4,1fr); }
+}
+
+/* EXPERIENCE */
+.timeline{ position:relative; }
+.tl-item{ position:relative; padding-left:2.2rem; padding-bottom:2.6rem; }
+.tl-item::before{ /* spine */
+  content:""; position:absolute; left:6px; top:6px; bottom:-6px; width:2px; background:var(--hairline-strong);
+}
+.tl-item:last-child::before{ display:none; }
+.tl-item::after{ /* dot */
+  content:""; position:absolute; left:0; top:4px; width:14px; height:14px; border-radius:50%;
+  background:var(--ivory); border:2.5px solid var(--hairline-strong);
+}
+.tl-item.role-marketing::before{ background:var(--forest); width:3px; left:5.5px; }
+.tl-item.role-marketing::after{ border-color:var(--forest); background:var(--ember); }
+.tl-item.role-supply::before{ background:repeating-linear-gradient(to bottom, var(--hairline-strong) 0 6px, transparent 6px 12px); }
+
+.tl-card{ }
+.tl-card.emph{
+  background:var(--paper); border:1px solid var(--hairline); border-radius:16px; padding:1.8rem 1.6rem;
+}
+.tl-card.muted{ padding:0.2rem 0 0.2rem 0; opacity:.92; }
+.tl-top{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.4rem; margin-bottom:.2rem;}
+.tl-role{ font-family:var(--display); font-weight:600; font-size:1.25rem; color:var(--forest-deep); }
+.tl-card.muted .tl-role{ font-size:1.05rem; }
+.tl-date{ font-size:.78rem; color:var(--charcoal-soft); text-transform:uppercase; letter-spacing:.05em; white-space:nowrap; }
+.tl-company{ font-size:.88rem; color:var(--ember); font-weight:700; margin-bottom:.9rem; }
+.tl-card.muted .tl-company{ margin-bottom:.5rem; }
+.tl-bullets{ margin:0; padding-left:1.1rem; color:var(--charcoal-soft); }
+.tl-bullets li{ margin-bottom:.5rem; font-size:.98rem; line-height:1.6; }
+.tl-card.muted .tl-bullets li{ font-size:.92rem; margin-bottom:.35rem; }
+.tl-bullets strong{ color:var(--forest-deep); }
+.tag-row{ display:flex; flex-wrap:wrap; gap:.4rem; margin-top:1rem; }
+.tag{
+  font-size:.72rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase;
+  background:var(--beige); color:var(--forest-deep); padding:.32em .8em; border-radius:100px;
+}
+
+/* SKILLS */
+.skills{ background:var(--beige); }
+.skills-grid{ display:grid; gap:2rem; }
+.skill-group h3{ margin-bottom:1rem; }
+.skill-group .pill-row{ display:flex; flex-wrap:wrap; gap:.55rem; }
+.pill{
+  font-size:.84rem; font-weight:600; color:var(--forest-deep); background:var(--paper);
+  border:1px solid var(--hairline-strong); padding:.5em 1em; border-radius:100px;
+  transition:background .25s ease, color .25s ease, transform .25s ease;
+}
+.pill:hover{ background:var(--forest-deep); color:var(--ivory); transform:translateY(-2px); }
+@media (min-width:900px){
+  .skills-grid{ grid-template-columns:repeat(3,1fr); }
+}
+
+/* FEATURED WORK */
+.work-grid{ display:grid; gap:1.4rem; }
+.work-card{
+  border:1px solid var(--hairline); border-radius:18px; padding:1.9rem; background:var(--paper);
+  transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s ease;
+  position:relative; overflow:hidden;
+}
+.work-card:hover{ transform:translateY(-6px); box-shadow:0 24px 48px -24px rgba(36,32,25,.18); border-color:var(--hairline-strong); }
+.work-icon{
+  width:46px; height:46px; border-radius:12px; background:var(--forest-deep); color:var(--ember-soft);
+  display:flex; align-items:center; justify-content:center; margin-bottom:1.3rem;
+}
+.work-card h3{ margin-bottom:.6rem; }
+.work-card p{ color:var(--charcoal-soft); font-size:.94rem; line-height:1.65; margin-bottom:1rem; }
+.work-stat{ font-family:var(--display); color:var(--ember); font-size:1.3rem; font-weight:600; }
+@media (min-width:700px){ .work-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1050px){ .work-grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* PHILOSOPHY */
+.philosophy{
+  background:var(--forest); color:var(--ivory); text-align:center;
+}
+.philosophy-quote{
+  font-family:var(--display); font-style:italic; font-weight:500;
+  font-size:clamp(1.5rem, 3.6vw, 2.5rem); line-height:1.35; max-width:820px; margin:0 auto;
+}
+.philosophy-attr{ margin-top:1.6rem; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; color:rgba(247,241,227,.7); }
+
+/* RESUME */
+.resume-panel{
+  display:grid; gap:2rem; background:var(--paper); border:1px solid var(--hairline); border-radius:20px; padding:clamp(1.6rem,4vw,3rem);
+}
+.resume-doc{
+  background:var(--white); border:1px solid var(--hairline); border-radius:10px; padding:1.6rem 1.5rem;
+  font-family:var(--display);
+}
+.resume-doc .rd-name{ font-size:1.4rem; font-weight:700; color:var(--forest-deep); }
+.resume-doc .rd-tag{ font-family:var(--body); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ember); margin-top:.3rem; }
+.resume-doc hr{ border:none; border-top:2px solid var(--forest-deep); margin:.9rem 0; }
+.resume-doc .rd-line{ font-family:var(--body); font-size:.82rem; color:var(--charcoal-soft); margin-bottom:.5rem; }
+.resume-actions{ display:flex; flex-direction:column; gap:1.1rem; justify-content:center; }
+.resume-actions p{ color:var(--charcoal-soft); font-size:.95rem; }
+.resume-btns{ display:flex; flex-wrap:wrap; gap:.8rem; }
+@media (min-width:850px){ .resume-panel{ grid-template-columns:.85fr 1.15fr; } }
+
+/* CONTACT */
+.contact{ background:var(--forest-deep); color:var(--ivory); }
+.contact h2{ color:var(--ivory); }
+.contact .section-head p{ color:rgba(247,241,227,.72); }
+.contact-grid{ display:grid; gap:2.4rem; }
+.contact-info{ display:flex; flex-direction:column; gap:1.1rem; }
+.contact-info a, .contact-info div{
+  display:flex; align-items:center; gap:.8rem; text-decoration:none; color:var(--ivory); font-size:.98rem;
+}
+.ci-icon{ width:36px; height:36px; border-radius:50%; background:rgba(247,241,227,.1); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.contact-info a{ transition:opacity .25s ease; }
+.contact-info a:hover{ opacity:.7; }
+
+.contact-form{ display:flex; flex-direction:column; gap:.9rem; }
+.contact-form input, .contact-form textarea{
+  width:100%; background:rgba(247,241,227,.07); border:1px solid rgba(247,241,227,.22); border-radius:10px;
+  padding:.9em 1em; color:var(--ivory); font-family:var(--body); font-size:.95rem;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{ color:rgba(247,241,227,.5); }
+.contact-form input:focus, .contact-form textarea:focus{ outline:2px solid var(--ember); outline-offset:1px; }
+.form-note{ font-size:.78rem; color:rgba(247,241,227,.55); }
+@media (min-width:900px){ .contact-grid{ grid-template-columns:.85fr 1.15fr; } }
+
+/* FOOTER */
+footer{ background:var(--forest-deep); color:rgba(247,241,227,.6); padding:2rem 0 2.6rem; border-top:1px solid rgba(247,241,227,.1); font-size:.82rem; }
+.footer-row{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; align-items:center; }
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible{ outline:2px solid var(--ember); outline-offset:2px; }
+</style>
 </head>
-
 <body>
 
-<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+<div id="cursor-glow"></div>
 
-<div id="progress"></div>
-
-<!-- ================= NAVIGATION ================= -->
-
-<header>
-
-<nav class="navbar">
-
-<div class="container">
-
-<a href="#hero"
-class="logo">
-
-Shalmal.
-
-</a>
-
-<ul class="nav-links">
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#expertise">Expertise</a></li>
-
-<li><a href="#experience">Experience</a></li>
-
-<li><a href="#resume">Resume</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<div class="nav-buttons">
-
-<button id="themeBtn">
-
-🌙
-
-</button>
-
-<button id="menuBtn">
-
-☰
-
-</button>
-
-</div>
-
-</div>
-
-</nav>
-
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">Lande <span>Shalmal</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#numbers">Impact</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-ghost nav-cta">Let's Talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<!-- ================= HERO ================= -->
-
-<section
-id="hero">
-
-<div class="container hero-grid">
-
-<div class="hero-content">
-
-<p class="eyebrow">
-
-PERFORMANCE MARKETING
-
-</p>
-
-<h1>
-
-Turning Data
-
-<br>
-
-Into Growth.
-
-</h1>
-
-<p class="subtitle">
-
-Performance Marketing Executive helping businesses grow through customer acquisition, lifecycle marketing, CRM automation, customer retention, experimentation and analytics.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#experience"
-class="primary-btn">
-
-Explore My Work
-
-</a>
-
-<a href="resume.pdf"
-class="secondary-btn"
-target="_blank">
-
-Resume
-
-</a>
-
-<a href="#contact"
-class="secondary-btn">
-
-Contact
-
-</a>
-
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#numbers">Impact</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-on-dark mm-cta">Let's Talk</a>
 </div>
 
-</div>
+<main id="top">
 
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker"><span class="dot"></span><span class="eyebrow">Performance Marketing · Growth · Retention</span></div>
+      <h1>Turning Customer<br/>Behaviour Into <span class="italic-accent">Growth.</span></h1>
+      <p class="lede">Three years spent building the operational backbone of a quick-commerce supply chain. Today I build the growth systems that decide whether a customer comes back data-led, execution-first, and a little obsessed with why people do what they do.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary magnetic">See the Work</a>
+        <a href="#resume" class="btn btn-ghost magnetic">Download Resume</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>4+ yrs</strong><span>Growth &amp; Ops</span></div>
+        <div><strong>79%</strong><span>M1 Retention</span></div>
+        <div><strong>10K+</strong><span>Daily Shipments Managed</span></div>
+      </div>
+    </div>
+   <div class="hero-visual">
+  <svg class="route-svg" viewBox="0 0 400 420" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+    <path class="route-path route-draw" d="M30 340 L90 300 L70 250 L140 210 L120 160" />
+    <path class="route-path grow route-draw2" d="M120 160 L180 130 L230 150 L280 80 L360 40" />
+    <circle class="route-dot" cx="360" cy="40" r="6"></circle>
+</svg>
 <div class="hero-image">
-
-<div class="image-card">
-
-<img
-src="profile.jpg"
-alt="Shalmal Lande">
-
+  <img src="SHALMALLANDE.PNG" alt="SL" class="hero-avatar">
 </div>
-
-</div>
-
-</div>
-
-<div class="scroll-indicator">
-
-↓
-
-</div>
-
 </section>
 
-<!-- ================= GROWTH SNAPSHOT ================= -->
-
-<section
-id="snapshot">
-<!-- ================= GROWTH SNAPSHOT ================= -->
-
-<section id="snapshot" class="section">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <p class="section-tag">
-                GROWTH SNAPSHOT
-            </p>
-
-            <h2>
-                Measurable Impact,
-                <br>
-                Not Just Marketing.
-            </h2>
-
-            <p class="section-description">
-
-                Every campaign should move a business metric.
-                Here's a snapshot of outcomes achieved through
-                customer lifecycle optimization, CRM automation,
-                retention strategies and operational excellence.
-
-            </p>
-
-        </div>
-
-        <div class="stats-grid">
-
-            <div class="stat-card featured">
-
-                <span class="stat-number counter"
-                    data-target="23">
-
-                    0%
-
-                </span>
-
-                <h3>
-
-                    Subscription Growth
-
-                </h3>
-
-                <p>
-
-                    Week-over-Week increase through lifecycle
-                    marketing campaigns.
-
-                </p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number counter"
-                    data-target="9">
-
-                    0%
-
-                </span>
-
-                <h3>
-
-                    Active Subscribers
-
-                </h3>
-
-                <p>
-
-                    Month-over-Month growth by optimizing
-                    customer engagement.
-
-                </p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number counter"
-                    data-target="73">
-
-                    0%
-
-                </span>
-
-                <h3>
-
-                    Customer Retention
-
-                </h3>
-
-                <p>
-
-                    Improved customer loyalty through
-                    lifecycle automation.
-
-                </p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number counter"
-                    data-target="38">
-
-                    0%
-
-                </span>
-
-                <h3>
-
-                    Customer Reactivation
-
-                </h3>
-
-                <p>
-
-                    Re-engaged inactive users with
-                    personalized campaigns.
-
-                </p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number counter"
-                    data-target="94">
-
-                    0%
-
-                </span>
-
-                <h3>
-
-                    On-Time Delivery
-
-                </h3>
-
-                <p>
-
-                    Operational excellence that strengthened
-                    customer experience.
-
-                </p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <span class="stat-number">
-
-                    1.5%
-                    →
-                    0.5%
-
-                </span>
-
-                <h3>
-
-                    RTO Reduction
-
-                </h3>
-
-                <p>
-
-                    Reduced Return-to-Origin through
-                    process optimization and analytics.
-
-                </p>
-
-            </div>
-
-        </div>
-
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <span class="eyebrow">The Story</span>
+      <h2>From Routes to Retention.</h2>
+    </div>
+    <div class="about-copy reveal">
+      <p>I didn't start in marketing. I started on the ground — untangling delivery routes, chasing down late shipments, and building the SOPs that held a fruit-and-vegetable supply chain together across ten thousand daily deliveries.</p>
+      <p class="pull">"Every broken delivery route taught me the same lesson a broken funnel would, later: find where it fails, fix one thing, measure what happens."</p>
+      <p>That work trained an instinct — spot the pattern, isolate the variable, measure the outcome — and pointed it, almost by accident, at a different kind of exception: the customer who nearly churned, and came back anyway.</p>
+      <p>Today I build growth systems instead of operational ones. Same instincts, aimed at subscriptions, cohorts, and lifecycle journeys instead of shipments — with the analytical rigor of someone who once had to explain, in a dashboard, exactly why a delivery was late.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" id="numbers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Numbers That Matter</span>
+      <h2>Outcomes, Not Vanity Metrics.</h2>
+      <p class="lede" style="margin-top:1rem;">Every figure below is a business result, not an impression count.</p>
+    </div>
+    <div class="kpi-grid reveal-stagger">
+      <div class="kpi-card">
+        <div class="kpi-num"><span class="counter" data-target="79" data-suffix="%">0%</span></div>
+        <div class="kpi-label">M1 subscription customer retention</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num"><span class="counter" data-target="23" data-suffix="%">0%</span></div>
+        <div class="kpi-label">WoW subscription order growth</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num"><span class="counter" data-target="9" data-suffix="%">0%</span></div>
+        <div class="kpi-label">MoM active subscription growth</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num"><span class="counter" data-target="73" data-suffix="%">0%</span></div>
+        <div class="kpi-label">Regular customers retention</div>
+      </div>
+      <div class="kpi-card kpi-rto">
+ <div class="kpi-num"><span class="counter" data-target="38" data-suffix="%">0%</span></div>
+	<div class="kpi-label">Customer reactivation rate</div>
+      </div>
+  
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Built the Systems.<br/>Then Built the Growth.</h2>
     </div>
 
-</section>
+    <div class="timeline">
 
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section">
-
-    <div class="container about-grid">
-
-        <div>
-
-            <p class="section-tag">
-
-                ABOUT ME
-
-            </p>
-
-            <h2>
-
-                Performance Marketing
-                Built On
-                Systems Thinking.
-
-            </h2>
-
+      <div class="tl-item role-marketing reveal">
+        <div class="tl-card emph">
+          <div class="tl-top">
+            <span class="tl-role">Performance Marketing Executive</span>
+            <span class="tl-date">Mar 2026 — Present</span>
+          </div>
+          <div class="tl-company">KisanKonnect Safe Food Pvt. Ltd. · Navi Mumbai</div>
+          <ul class="tl-bullets">
+            <li>Own end‑to‑end performance marketing for KisanKonnect's dairy subscription line — acquisition through retention.</li>
+            <li>Built lifecycle automations in CleverTap that message new, active, and low‑wallet‑balance subscribers at exactly the right moment to keep orders uninterrupted.</li>
+            <li>Ran Day‑0 onboarding offers that drove <strong>23% WoW growth</strong> in subscription orders and <strong>9% MoM growth</strong> in active subscriptions.</li>
+            <li>Monitor store‑wise launch‑to‑conversion funnels, catching cohort‑level degrowth early and coordinating fixes across teams before it compounds.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">CleverTap</span><span class="tag">Lifecycle</span><span class="tag">Funnels</span><span class="tag">Cohorts</span></div>
         </div>
+      </div>
 
-        <div class="about-content">
-
-            <p>
-
-                I help businesses grow by combining customer insights,
-                experimentation, lifecycle marketing, and data-driven
-                decision-making. My focus is on building marketing systems
-                that improve acquisition, retention, engagement, and
-                long-term customer value.
-
-            </p>
-
-            <p>
-
-                My foundation in supply chain and operations shaped how I
-                approach marketing today. It taught me to think in systems,
-                optimize processes, measure outcomes, and solve complex
-                business problems with data rather than assumptions.
-
-            </p>
-
-            <p>
-
-                Today, I bring that same analytical mindset into
-                performance marketing—using CRM automation,
-                customer segmentation, experimentation,
-                and continuous optimization to drive measurable growth.
-
-            </p>
-
+      <div class="tl-item role-marketing reveal">
+        <div class="tl-card emph">
+          <div class="tl-top">
+            <span class="tl-role">Performance Marketing Executive</span>
+            <span class="tl-date">Nov 2023 — May 2024</span>
+          </div>
+          <div class="tl-company">KisanKonnect Safe Food Pvt. Ltd. · Navi Mumbai</div>
+          <ul class="tl-bullets">
+            <li>Led retention and reactivation, hitting <strong>73% regular retention</strong> and <strong>38% reactivation</strong>, month over month.</li>
+            <li>Owned end‑to‑end app and website merchandising — product sequencing, banners, and the full user experience flow.</li>
+            <li>Took KisanKonnect live on the ONDC network in <strong>a single day</strong>, from product listing to full setup.</li>
+            <li>Planned weekly promotions and owned offer cost and budget control alongside performance tracking.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">Full Funnel Analysis</span><span class="tag">Retention Marketing</span><span class="tag">Reactivation</span><span class="tag">ONDC</span></div>
         </div>
+      </div>
+
+      <div class="tl-item role-supply reveal">
+        <div class="tl-card muted">
+          <div class="tl-top">
+            <span class="tl-role">Supply Chain Executive</span>
+            <span class="tl-date">May 2024 — Sep 2025</span>
+          </div>
+          <div class="tl-company">KisanKonnect Safe Food Pvt. Ltd. · Navi Mumbai</div>
+          <ul class="tl-bullets">
+            <li>Ran real‑time tracking across <strong>10,000+ daily shipments</strong>, lifting on‑time delivery from 82% to <strong>94%</strong>.</li>
+            <li>Cut return‑to‑origin from 1.5% to <strong>0.5%</strong> and delivery delays by <strong>25%</strong> through tighter process control.</li>
+            <li>Built cluster‑wise MIS dashboards in Excel and Sheets, and self‑taught Tableau and Power BI for leadership reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item role-supply reveal">
+        <div class="tl-card muted">
+          <div class="tl-top">
+            <span class="tl-role">Junior Executive, Supply Chain</span>
+            <span class="tl-date">Sep 2021 — Nov 2023</span>
+          </div>
+          <div class="tl-company">KisanKonnect Safe Food Pvt. Ltd. · Navi Mumbai</div>
+          <ul class="tl-bullets">
+            <li>Planned delivery routes across Mumbai and Pune, improving on‑time performance and cutting last‑mile cost.</li>
+            <li>Worked as Sales Coordinator and Admin, keeping field teams, 3PL partners, and stakeholders aligned daily.</li>
+          </ul>
+        </div>
+      </div>
 
     </div>
-
+  </div>
 </section>
 
-<!-- ================= PERFORMANCE EXPERTISE ================= -->
-
-<section id="expertise" class="section">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <p class="section-tag">
-
-                PERFORMANCE MARKETING
-
-            </p>
-
-            <h2>
-
-                What I Specialize In
-
-            </h2>
-
-            <p class="section-description">
-
-                I enjoy building growth systems that connect
-                customer behaviour with measurable business outcomes.
-
-            </p>
-
+<!-- ============ SKILLS ============ -->
+<section class="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Skill Set</span>
+      <h2>The Toolkit Behind the Numbers.</h2>
+    </div>
+    <div class="skills-grid reveal-stagger">
+      <div class="skill-group">
+        <h3>Growth &amp; Marketing</h3>
+        <div class="pill-row">
+          <span class="pill">Performance Marketing</span>
+ <span class="pill">CleverTap</span>
+          <span class="pill">Retention Marketing</span>
+          <span class="pill">Lifecycle Marketing</span>
+          <span class="pill">CRM</span>
+          <span class="pill">Push Notifications</span>
+          <span class="pill">Customer Segmentation</span>
+          <span class="pill">Campaign Strategy</span>
+          <span class="pill">Consumer Behaviour</span>
         </div>
-
-        <div class="expertise-grid">
-
-            <div class="expertise-card">
-
-                <div class="icon">
-
-                    🚀
-
-                </div>
-
-                <h3>
-
-                    Customer Acquisition
-
-                </h3>
-
-                <p>
-
-                    Data-driven campaigns focused on sustainable user growth
-                    and conversion optimization.
-
-                </p>
-
-            </div>
-
-            <div class="expertise-card">
-
-                <div class="icon">
-
-                    🔄
-
-                </div>
-
-                <h3>
-
-                    Lifecycle Marketing
-
-                </h3>
-
-                <p>
-
-                    CRM journeys, onboarding, retention,
-                    reactivation and customer engagement.
-
-                </p>
-
-            </div>
-
-            <div class="expertise-card">
-
-                <div class="icon">
-
-                    📈
-
-                </div>
-
-                <h3>
-
-                    Growth Analytics
-
-                </h3>
-
-                <p>
-
-                    Experimentation, dashboards,
-                    KPI tracking and performance analysis.
-
-                </p>
-
-            </div>
-
-            <div class="expertise-card">
-
-                <div class="icon">
-
-                    ⚡
-
-                </div>
-
-                <h3>
-
-                    Marketing Automation
-
-                </h3>
-
-                <p>
-
-                    CleverTap, MoEngage and automated customer journeys
-                    that improve engagement and retention.
-
-                </p>
-
-            </div>
-
+      </div>
+      <div class="skill-group">
+        <h3>Analytics &amp; Tools</h3>
+        <div class="pill-row">
+          <span class="pill">CleverTap</span>
+          <span class="pill">SQL (Basic)</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Excel &amp; Google Sheets</span>
         </div>
+      </div>
+      <div class="skill-group">
+        <h3>Foundations</h3>
+        <div class="pill-row">
+          <span class="pill">Supply Chain Ops</span>
+          <span class="pill">Process Improvement</span>
+          <span class="pill">Vendor / 3PL Management</span>
+          <span class="pill">SOP Design</span>
+          <span class="pill">Cross‑functional Execution</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Growth Initiatives</span>
+      <h2>Selected Systems I've Built.</h2>
+    </div>
+    <div class="work-grid reveal-stagger">
+
+      <div class="work-card">
+        <div class="work-icon">↗</div>
+        <h3>Subscription Growth Engine</h3>
+        <p>Day‑0 onboarding offers designed to hook new dairy subscribers in their first order window.</p>
+        <div class="work-stat">+23% WoW</div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-icon">↺</div>
+        <h3>Retention &amp; Reactivation Program</h3>
+        <p>Lifecycle campaigns that bring lapsing customers back before they churn, and win back the ones who already did.</p>
+        <div class="work-stat">73% / 38%</div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-icon">⚙</div>
+        <h3>CRM Lifecycle Automation</h3>
+        <p>CleverTap journeys that message new, active, and low‑wallet‑balance subscribers at exactly the right moment.</p>
+        <div class="work-stat">CleverTap</div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-icon">◔</div>
+        <h3>Cohort &amp; Funnel Diagnostics</h3>
+        <p>Store‑wise launch‑to‑conversion tracking that flags cohort‑level degrowth before it becomes a trend.</p>
+        <div class="work-stat">Funnels</div>
+      </div>
+
+ 
+
+      <div class="work-card">
+        <div class="work-icon">◆</div>
+        <h3>Month‑1 Retention Push</h3>
+        <p>Onboarding and early‑lifecycle nudges built to keep first‑time subscribers past their most fragile month.</p>
+        <div class="work-stat">79% M1</div>
+      </div>
 
     </div>
-
-</section>
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section
-id="about">
-
+  </div>
 </section>
 
-<!-- ================= EXPERTISE ================= -->
-
-<section
-id="expertise">
-
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section
-id="experience">
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience" class="section">
-
-<div class="container">
-
-<div class="section-header">
-
-<p class="section-tag">
-
-EXPERIENCE
-
-</p>
-
-<h2>
-
-Driving Growth Through
-<br>
-Data & Experimentation
-
-</h2>
-
-<p class="section-description">
-
-From customer acquisition to lifecycle automation,
-every role strengthened my ability to build
-scalable growth systems.
-
-</p>
-
-</div>
-
-<!-- Experience Card 1 -->
-
-<div class="experience-card">
-
-<div class="experience-left">
-
-<span class="experience-date">
-
-Mar 2026 — Present
-
-</span>
-
-<h3>
-
-Performance Marketing Executive
-
-</h3>
-
-<p class="company">
-
-KisanKonnect Safe Food Pvt. Ltd.
-
-</p>
-
-</div>
-
-<div class="experience-right">
-
-<h4>
-
-Business Impact
-
-</h4>
-
-<ul>
-
-<li>Improved subscription growth through lifecycle marketing initiatives.</li>
-
-<li>Executed CRM journeys using CleverTap.</li>
-
-<li>Optimized customer onboarding and engagement campaigns.</li>
-
-<li>Worked with cross-functional teams to improve customer retention.</li>
-
-<li>Monitored campaign KPIs and performance dashboards.</li>
-
-</ul>
-
-<div class="tools">
-
-<span>CleverTap</span>
-
-<span>Excel</span>
-
-<span>Google Sheets</span>
-
-<span>SQL</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Experience Card 2 -->
-
-<div class="experience-card">
-
-<div class="experience-left">
-
-<span class="experience-date">
-
-Nov 2023 — May 2024
-
-</span>
-
-<h3>
-
-Performance Marketing Executive
-
-</h3>
-
-<p class="company">
-
-KisanKonnect Safe Food Pvt. Ltd.
-
-</p>
-
-</div>
-
-<div class="experience-right">
-
-<h4>
-
-Business Impact
-
-</h4>
-
-<ul>
-
-<li>Executed customer retention campaigns.</li>
-
-<li>Managed promotional campaigns across digital channels.</li>
-
-<li>Improved customer engagement through lifecycle communication.</li>
-
-<li>Supported ONDC launch initiatives.</li>
-
-<li>Optimized merchandising for app & website.</li>
-
-</ul>
-
-<div class="tools">
-
-<span>MoEngage</span>
-
-<span>Excel</span>
-
-<span>CRM</span>
-
-<span>Analytics</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Experience Card 3 -->
-
-<div class="experience-card">
-
-<div class="experience-left">
-
-<span class="experience-date">
-
-May 2024 — Sep 2025
-
-</span>
-
-<h3>
-
-Supply Chain Executive
-
-</h3>
-
-<p class="company">
-
-KisanKonnect Safe Food Pvt. Ltd.
-
-</p>
-
-</div>
-
-<div class="experience-right">
-
-<h4>
-
-Operational Excellence
-
-</h4>
-
-<ul>
-
-<li>Managed large-scale delivery operations.</li>
-
-<li>Improved On-Time Delivery performance.</li>
-
-<li>Reduced Return-to-Origin rates.</li>
-
-<li>Developed dashboards for operational reporting.</li>
-
-<li>Worked across logistics, planning and analytics.</li>
-
-</ul>
-
-<div class="tools">
-
-<span>Excel</span>
-
-<span>Power BI</span>
-
-<span>Tableau</span>
-
-<span>SQL</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Experience Card 4 -->
-
-<div class="experience-card">
-
-<div class="experience-left">
-
-<span class="experience-date">
-
-Sep 2021 — Nov 2023
-
-</span>
-
-<h3>
-
-Junior Executive
-
-</h3>
-
-<p class="company">
-
-Supply Chain Operations
-
-</p>
-
-</div>
-
-<div class="experience-right">
-
-<h4>
-
-Foundation
-
-</h4>
-
-<ul>
-
-<li>Coordinated logistics operations.</li>
-
-<li>Managed delivery planning.</li>
-
-<li>Worked with vendors and field teams.</li>
-
-<li>Created operational SOPs.</li>
-
-<li>Improved reporting processes.</li>
-
-</ul>
-
-<div class="tools">
-
-<span>Excel</span>
-
-<span>Operations</span>
-
-<span>Logistics</span>
-
-<span>Planning</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-</section>
-
-<!-- ================= CASE STUDIES ================= -->
-
-<section
-id="cases">
-<!-- ================= MARKETING STACK ================= -->
-
-<section id="cases" class="section">
-
-<div class="container">
-
-<div class="section-header">
-
-<p class="section-tag">
-
-MARKETING STACK
-
-</p>
-
-<h2>
-
-Tools, Platforms &
-Technologies
-
-</h2>
-
-<p class="section-description">
-
-A blend of marketing, analytics and operational tools that
-help me build scalable customer growth systems.
-
-</p>
-
-</div>
-
-<div class="stack-grid">
-
-<!-- CRM -->
-
-<div class="stack-card">
-
-<h3>CRM & Lifecycle</h3>
-
-<div class="badges">
-
-<span>CleverTap</span>
-
-<span>MoEngage</span>
-
-<span>Customer Journeys</span>
-
-<span>Segmentation</span>
-
-<span>Push Notifications</span>
-
-<span>Retention</span>
-
-<span>Reactivation</span>
-
-</div>
-
-</div>
-
-<!-- Performance -->
-
-<div class="stack-card">
-
-<h3>Performance Marketing</h3>
-
-<div class="badges">
-
-<span>Customer Acquisition</span>
-
-<span>Campaign Planning</span>
-
-<span>Growth Strategy</span>
-
-<span>Conversion</span>
-
-<span>A/B Testing</span>
-
-<span>Lifecycle Marketing</span>
-
-</div>
-
-</div>
-
-<!-- Analytics -->
-
-<div class="stack-card">
-
-<h3>Analytics</h3>
-
-<div class="badges">
-
-<span>Excel</span>
-
-<span>Google Sheets</span>
-
-<span>SQL</span>
-
-<span>Power BI</span>
-
-<span>Tableau</span>
-
-<span>Dashboarding</span>
-
-<span>KPIs</span>
-
-</div>
-
-</div>
-
-<!-- Marketing Platforms -->
-
-<div class="stack-card">
-
-<h3>Marketing Platforms</h3>
-
-<div class="badges">
-
-<span>Google Analytics*</span>
-
-<span>Google Ads*</span>
-
-<span>Meta Ads*</span>
-
-<span>App Analytics</span>
-
-<span>Campaign Reporting</span>
-
-</div>
-
-<p class="note">
-
-*Placeholder for future certifications and hands-on projects.
-
-</p>
-
-</div>
-
-<!-- Operations -->
-
-<div class="stack-card">
-
-<h3>Operations Foundation</h3>
-
-<div class="badges">
-
-<span>Supply Chain</span>
-
-<span>Vendor Management</span>
-
-<span>Process Improvement</span>
-
-<span>SOP Design</span>
-
-<span>Logistics</span>
-
-<span>Planning</span>
-
-</div>
-
-</div>
-
-<!-- Soft Skills -->
-
-<div class="stack-card">
-
-<h3>Core Strengths</h3>
-
-<div class="badges">
-
-<span>Problem Solving</span>
-
-<span>Data Storytelling</span>
-
-<span>Cross-functional Collaboration</span>
-
-<span>Business Thinking</span>
-
-<span>Customer Centricity</span>
-
-<span>Continuous Learning</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FEATURED CASE STUDIES ================= -->
-
-<section id="case-studies" class="section">
-
-<div class="container">
-
-<div class="section-header">
-
-<p class="section-tag">
-
-CASE STUDIES
-
-</p>
-
-<h2>
-
-Growth Stories
-
-</h2>
-
-<p class="section-description">
-
-Detailed case studies showcasing campaign strategy,
-execution, experimentation and measurable outcomes
-will be added here.
-
-</p>
-
-</div>
-
-<div class="case-grid">
-
-<div class="case-card">
-
-<div class="case-image">
-
-Coming Soon
-
-</div>
-
-<h3>
-
-Subscription Growth
-
-</h3>
-
-<p>
-
-Lifecycle marketing strategy that increased
-subscription growth.
-
-</p>
-
-</div>
-
-<div class="case-card">
-
-<div class="case-image">
-
-Coming Soon
-
-</div>
-
-<h3>
-
-Customer Retention
-
-</h3>
-
-<p>
-
-CRM automation and customer engagement campaigns.
-
-</p>
-
-</div>
-
-<div class="case-card">
-
-<div class="case-image">
-
-Coming Soon
-
-</div>
-
-<h3>
-
-Reactivation Strategy
-
-</h3>
-
-<p>
-
-Data-driven experiments focused on bringing inactive
-customers back.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-</section>
-
-<!-- ================= RESUME ================= -->
-
-<section
-id="resume">
-<!-- ================= MARKETING PHILOSOPHY ================= -->
-
+<!-- ============ PHILOSOPHY ============ -->
 <section class="philosophy">
-
-<div class="container">
-
-<div class="philosophy-box">
-
-<p class="section-tag">
-
-MY PHILOSOPHY
-
-</p>
-
-<h2>
-
-Growth isn't about
-<br>
-spending more.
-
-</h2>
-
-<p class="quote">
-
-It's about understanding customer behaviour,
-measuring everything,
-running disciplined experiments,
-and building systems that scale.
-
-</p>
-
-<p class="description">
-
-The best marketing decisions aren't driven by assumptions—
-they're driven by customer insights, data, experimentation,
-and continuous optimization.
-
-Every campaign is an opportunity to learn.
-
-Every metric tells a story.
-
-Every customer interaction is a chance to improve the experience.
-
-</p>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <p class="philosophy-quote reveal">"Retention is a supply chain problem. Somewhere between the offer and the order, something breaks or holds. My job is finding out which, and building the system that gets it right every time."</p>
+    <p class="philosophy-attr reveal">- Shalmal Lande</p>
+  </div>
 </section>
 
-<!-- ================= RESUME ================= -->
-
-<section id="resume" class="section">
-
-<div class="container">
-
-<div class="section-header">
-
-<p class="section-tag">
-
-RESUME
-
-</p>
-
-<h2>
-
-Professional Resume
-
-</h2>
-
-<p class="section-description">
-
-Download my latest resume or view it directly.
-
-</p>
-
-</div>
-
-<div class="resume-card">
-
-<div class="resume-icon">
-
-📄
-
-</div>
-
-<h3>
-
-Performance Marketing Resume
-
-</h3>
-
-<p>
-
-Built around measurable growth,
-customer lifecycle,
-CRM,
-analytics,
-and business impact.
-
-</p>
-
-<div class="resume-buttons">
-
-<a href="resume.pdf"
-target="_blank"
-class="primary-btn">
-
-View Resume
-
-</a>
-
-<a href="resume.pdf"
-download
-class="secondary-btn">
-
-Download PDF
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+<!-- ============ RESUME ============ -->
+<section id="resume">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Resume</span>
+      <h2>The Full Picture, on Paper.</h2>
+    </div>
+    <div class="resume-panel reveal">
+      <div class="resume-doc">
+        <div class="rd-name">Shalmal Sandeep Lande</div>
+        <div class="rd-tag">Performance Marketing · Navi Mumbai</div>
+        <hr/>
+        <div class="rd-line">Performance Marketing Executive — KisanKonnect</div>
+        <div class="rd-line">MBA, Supply Chain Management &amp; Operations</div>
+        <div class="rd-line">4+ years · Growth, Retention &amp; Ops</div>
+      </div>
+      <div class="resume-actions">
+        <h3>One PDF. Every number backed up.</h3>
+        <p>A single, ATS‑friendly resume — reverse‑chronological, recruiter‑ready, and print‑formatted for A4. Same document whether it's parsed by a bot or read by a hiring manager.</p>
+        <div class="resume-btns">
+          <a href="resume.pdf" download class="btn btn-primary magnetic">Download PDF</a>
+          <a href="resume.pdf" target="_blank" class="btn btn-ghost magnetic">Preview / Print</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's Build Something<br/>That Grows.</h2>
+      <p class="lede" style="margin-top:1rem;">Open to Performance, Growth, CRM, Lifecycle, and Retention Marketing roles.</p>
+    </div>
 
-<section id="contact" class="section dark-section">
-
-<div class="container">
-
-<div class="section-header center">
-
-<p class="section-tag">
-
-LET'S CONNECT
-
-</p>
-
-<h2>
-
-Let's Build
-Something Meaningful
-
-</h2>
-
-<p class="section-description">
-
-I'm always open to discussing growth,
-performance marketing,
-CRM,
-analytics,
-or exciting opportunities.
-
-</p>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-
-<div class="contact-item">
-
-<h4>Email</h4>
-
-<p>
-
-shalmallande@gmail.com
-
-</p>
-
-</div>
-
-<div class="contact-item">
-
-<h4>Phone</h4>
-
-<p>
-
-+91 9136284292
-
-</p>
-
-</div>
-
-<div class="contact-item">
-
-<h4>Location</h4>
-
-<p>
-
-Navi Mumbai, Maharashtra
-
-</p>
-
-</div>
-
-<div class="contact-item">
-
-<h4>LinkedIn</h4>
-
-<p>
-
-(Add your LinkedIn URL)
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<h3>
-
-Ready to collaborate?
-
-</h3>
-
-<p>
-
-Whether it's customer acquisition,
-CRM,
-retention,
-or lifecycle marketing,
-I'd love to connect.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="mailto:shalmallande@gmail.com"
-class="primary-btn">
-
-Email Me
-
-</a>
-
-<a href="resume.pdf"
-download
-class="secondary-btn">
-
-Resume
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:shalmallande@gmail.com">
+          <span class="ci-icon">✉</span> shalmallande@gmail.com
+        </a>
+        <a href="tel:+919136284292">
+          <span class="ci-icon">☎</span> +91 91362 84292
+        </a>
+        <a href="https://www.linkedin.com/in/shalmal-lande-428341118/" target="_blank" rel="noopener">
+          <span class="ci-icon">in</span> linkedin.com/in/shalmal-lande
+        </a>
+        <div>
+          <span class="ci-icon">◎</span> Navi Mumbai, Maharashtra
+        </div>
+   
+ 
 </section>
 
-<!-- ================= FOOTER ================= -->
+</main>
 
 <footer>
-
-<div class="container footer">
-
-<div>
-
-<h3>
-
-Shalmal.
-
-</h3>
-
-<p>
-
-Turning Data Into Growth.
-
-</p>
-
-</div>
-
-<div>
-
-<p>
-
-Built with ❤️ by Shalmal Lande
-
-</p>
-
-<p>
-
-© 2026 All Rights Reserved.
-
-</p>
-
-</div>
-
-</div>
-
+  <div class="container footer-row">
+    <span>© 2026 Shalmal Lande. Built with intention.</span>
+    <span>Navi Mumbai, India</span>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+// Nav scroll state
+const navEl = document.getElementById('siteNav');
+window.addEventListener('scroll', () => {
+  navEl.classList.toggle('scrolled', window.scrollY > 10);
+  const doc = document.documentElement;
+  const pct = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+  document.getElementById('scroll-progress').style.width = pct + '%';
+  document.getElementById('back-to-top').classList.toggle('show', window.scrollY > 700);
+}, { passive:true });
+
+// Mobile menu
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navToggle.classList.remove('open'); mobileMenu.classList.remove('open');
+}));
+
+// Back to top
+document.getElementById('back-to-top').addEventListener('click', () => {
+  window.scrollTo({ top:0, behavior:'smooth' });
+});
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+  });
+}, { threshold:0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+const counterIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals || '0');
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = target * eased;
+      el.textContent = val.toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    counterIO.unobserve(el);
+  });
+}, { threshold:0.4 });
+counters.forEach(el => counterIO.observe(el));
+
+// Magnetic buttons (desktop / hover-capable only)
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.magnetic').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width/2;
+      const y = e.clientY - r.top - r.height/2;
+      btn.style.transform = `translate(${x*0.18}px, ${y*0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = 'translate(0,0)'; });
+  });
+
+  const glow = document.getElementById('cursor-glow');
+  document.addEventListener('mousemove', (e) => {
+    glow.style.opacity = '1';
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+  document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
+}
+
+// Contact form -> mailto fallback
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(this);
+  const subject = encodeURIComponent('Portfolio contact from ' + (f.get('name') || ''));
+  const body = encodeURIComponent((f.get('message') || '') + '\n\n— ' + (f.get('name') || '') + ' (' + (f.get('email') || '') + ')');
+  window.location.href = `mailto:shalmallande@gmail.com?subject=${subject}&body=${body}`;
+});
+</script>
 
 </body>
-
-</html>
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section
-id="contact">
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
 </html>
