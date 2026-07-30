@@ -1,616 +1,1387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#FFFFFF">
-<title>Shalmal Lande — Performance Marketing Professional</title>
-<meta name="description" content="Shalmal Lande — Performance marketing professional in agri-tech & quick commerce. Retention, lifecycle automation, and campaign growth for KisanKonnect.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#FFFFFF;
-    --bg-soft:#F6F7F2;
-    --ink:#14181F;
-    --muted:#68707D;
-    --line:rgba(20,24,31,0.09);
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    --green:#159A48;      --green-soft:#E4F6EA;
-    --amber:#DB8A00;      --amber-soft:#FDF0DA;
-    --sky:#0B87C2;        --sky-soft:#E1F1FA;
-    --coral:#E2415D;      --coral-soft:#FCE6EA;
-    --violet:#7C4DE0;     --violet-soft:#EFE8FC;
+    <title>Shalmal Lande | Performance Marketing Portfolio</title>
 
-    --maxw:1080px;
-    --radius:16px;
-    --shadow:0 1px 2px rgba(20,24,31,0.04), 0 8px 24px rgba(20,24,31,0.06);
-  }
+    <meta name="description"
+        content="Performance Marketing, Lifecycle Marketing, Supply Chain, Analytics and Growth Portfolio of Shalmal Lande.">
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
-  }
+    <meta name="keywords"
+        content="Performance Marketing, Growth Marketing, CRM, CleverTap, MoEngage, Analytics, Supply Chain">
 
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'IBM Plex Sans', sans-serif;
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+    <meta name="author" content="Shalmal Lande">
 
-  a{color:inherit;}
-  a:focus-visible, button:focus-visible{outline:2px solid var(--green); outline-offset:3px;}
-  img,svg{display:block;}
+    <meta property="og:title" content="Shalmal Lande | Turning Data Into Growth">
+    <meta property="og:description"
+        content="Performance Marketing • Analytics • Growth • Operations">
+    <meta property="og:type" content="website">
 
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+    <link rel="icon" href="favicon.ico">
 
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--green);
-    font-weight:600;
-  }
+    <!-- Google Font -->
 
-  /* ---------- NAV ---------- */
-  header.site-nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(255,255,255,0.9);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-row{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:16px 24px;
-  }
-  .nav-mark{
-    font-family:'Fraunces', serif; font-weight:700; font-size:18px;
-    text-decoration:none; letter-spacing:.01em; color:var(--ink);
-  }
-  .nav-links{display:flex; gap:30px; list-style:none; margin:0; padding:0;}
-  .nav-links a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px; text-transform:uppercase; letter-spacing:.08em;
-    text-decoration:none; color:var(--muted);
-    transition:color .15s ease;
-  }
-  .nav-links a:hover{color:var(--ink);}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  .nav-toggle{
-    display:none;
-    flex-direction:column; justify-content:center; align-items:center; gap:5px;
-    width:40px; height:40px;
-    background:transparent; border:none; cursor:pointer; padding:0;
-  }
-  .nav-toggle span{
-    display:block; width:22px; height:2px; background:var(--ink);
-    border-radius:1px; transition:transform .2s ease, opacity .2s ease;
-  }
-  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
-  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  @media (max-width:640px){
-    .nav-toggle{display:flex;}
-    .nav-links{
-      display:none;
-      position:absolute; top:100%; left:0; right:0;
-      flex-direction:column; gap:0;
-      background:var(--paper);
-      border-bottom:1px solid var(--line);
-      box-shadow:var(--shadow);
-      padding:4px 24px 12px;
-    }
-    .nav-links.open{display:flex;}
-    .nav-links li{border-bottom:1px solid var(--line);}
-    .nav-links li:last-child{border-bottom:none;}
-    .nav-links a{display:block; padding:14px 2px; font-size:13px;}
-  }
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-  /* ---------- HERO ---------- */
-  .hero{padding:64px 0 40px;}
-  .hero h1{
-    font-family:'Fraunces', serif;
-    font-weight:900;
-    font-size:clamp(2.6rem, 6vw, 4.2rem);
-    line-height:1.03;
-    margin:16px 0 10px;
-    letter-spacing:-0.01em;
-    color:var(--ink);
-  }
-  .hero .role{
-    font-size:clamp(1.05rem, 2vw, 1.25rem);
-    font-weight:600;
-    color:var(--green);
-    margin:0 0 18px;
-  }
-  .hero p.lede{
-    max-width:600px; color:var(--muted); font-size:16.5px; margin:0 0 30px;
-  }
-  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
-  .btn{
-    font-family:'IBM Plex Sans', sans-serif;
-    font-size:14.5px; font-weight:600;
-    padding:13px 22px; border-radius:999px;
-    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
-    transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
-  }
-  .btn-primary{background:var(--green); color:#fff;}
-  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 6px 16px rgba(21,154,72,0.28);}
-  .btn-secondary{color:var(--ink); background:var(--bg-soft);}
-  .btn-secondary:hover{background:#EDEEE8;}
+    <!-- Tailwind -->
 
-  @media (max-width:640px){
-    .hero{padding:32px 0 32px;}
-    .hero-ctas{flex-direction:column;}
-    .btn{width:100%; justify-content:center;}
-  }
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  /* ---------- KPI GRID — signature element ---------- */
-  .kpi-section{padding:8px 0 56px;}
-  .kpi-heading{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px; text-transform:uppercase; letter-spacing:.12em;
-    color:var(--muted); margin:0 0 16px; font-weight:600;
-  }
-  .kpi-grid{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap:14px;
-  }
-  .kpi-card{
-    border-radius:var(--radius);
-    padding:22px 18px;
-    box-shadow:var(--shadow);
-  }
-  .kpi-card.c-green{background:var(--green-soft);}
-  .kpi-card.c-amber{background:var(--amber-soft);}
-  .kpi-card.c-sky{background:var(--sky-soft);}
-  .kpi-card.c-coral{background:var(--coral-soft);}
-  .kpi-card.c-violet{background:var(--violet-soft);}
+    <script>
+        tailwind.config = {
 
-  .kpi-value{
-    font-family:'IBM Plex Mono', monospace;
-    font-weight:700;
-    font-size:clamp(1.9rem, 3vw, 2.5rem);
-    line-height:1;
-  }
-  .kpi-card.c-green .kpi-value{color:var(--green);}
-  .kpi-card.c-amber .kpi-value{color:var(--amber);}
-  .kpi-card.c-sky .kpi-value{color:var(--sky);}
-  .kpi-card.c-coral .kpi-value{color:var(--coral);}
-  .kpi-card.c-violet .kpi-value{color:var(--violet);}
+            darkMode: "class",
 
-  .kpi-label{
-    font-size:13px; color:var(--ink); opacity:.72; margin-top:10px; line-height:1.35;
-  }
+            theme: {
 
-  @media (max-width:900px){
-    .kpi-grid{grid-template-columns:repeat(2, 1fr);}
-  }
-  @media (max-width:420px){
-    .kpi-grid{grid-template-columns:1fr;}
-  }
+                extend: {
 
-  /* ---------- SECTION SHELL ---------- */
-  section{padding:56px 0;}
-  .section-head{margin-bottom:32px;}
-  .section-head h2{
-    font-family:'Fraunces', serif; font-weight:700; font-size:26px; margin:0 0 10px;
-    color:var(--ink);
-  }
-  .section-head .rule{
-    width:44px; height:4px; border-radius:2px; background:var(--green);
-  }
+                    colors: {
 
-  /* ---------- SNAPSHOT ---------- */
-  .snapshot p{max-width:680px; color:var(--ink); font-size:16.5px;}
-  .snapshot p + p{margin-top:14px; color:var(--muted);}
+                        primary: "#1E4D3D",
+                        accent: "#C7863C",
+                        background: "#F8F7F3",
+                        card: "#F3EFE6"
 
-  /* ---------- EXPERIENCE ---------- */
-  .role-card{
-    background:var(--paper);
-    border:1px solid var(--line);
-    border-left:4px solid var(--green);
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    padding:26px 28px;
-    margin-bottom:18px;
-  }
-  .role-top{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; margin-bottom:4px;}
-  .role-title{font-size:18.5px; font-weight:700; margin:0;}
-  .role-date{
-    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--green); font-weight:600;
-  }
-  .role-company{color:var(--muted); font-size:14px; margin:0 0 16px;}
-  .role-card ul{margin:0; padding-left:18px; color:var(--ink);}
-  .role-card li{margin-bottom:8px; font-size:15px;}
-  .role-card li:last-child{margin-bottom:0;}
-  .tool-tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;}
-  .tool-tag{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px; color:var(--green); background:var(--green-soft);
-    padding:5px 11px; border-radius:999px; font-weight:600;
-  }
+                    }
 
-  .ops-card{
-    background:var(--bg-soft);
-    border-radius:var(--radius);
-    padding:22px 26px;
-  }
-  .ops-heading{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px; text-transform:uppercase; letter-spacing:.1em;
-    color:var(--muted); margin:0 0 4px; font-weight:600;
-  }
-  .ops-sub{color:var(--muted); font-size:13.5px; margin:0 0 18px;}
-  .ops-row{padding:14px 0; border-top:1px solid var(--line);}
-  .ops-row:first-of-type{border-top:none;}
-  .ops-row-top{display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px;}
-  .ops-date{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--muted); font-weight:600;}
-  .ops-title{font-size:14.5px; font-weight:700; margin:0 0 4px; color:var(--ink);}
-  .ops-desc{font-size:13.5px; color:var(--muted); margin:0;}
+                }
 
-  @media (max-width:640px){
-    .role-card{padding:20px;}
-    .ops-card{padding:18px;}
-  }
+            }
 
-  /* ---------- SKILLS ---------- */
-  .skill-group{margin-bottom:28px;}
-  .skill-group:last-child{margin-bottom:0;}
-  .skill-group h3{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px; text-transform:uppercase; letter-spacing:.1em;
-    margin:0 0 14px; font-weight:600;
-  }
-  .skill-group.primary h3{color:var(--green);}
-  .skill-group.secondary h3{color:var(--muted);}
-  .tag-cloud{display:flex; flex-wrap:wrap; gap:9px;}
-  .tag{padding:9px 15px; border-radius:999px; font-size:13.5px; font-weight:500;}
-  .skill-group.primary .tag{background:var(--green-soft); color:var(--green);}
-  .skill-group.secondary .tag{background:var(--bg-soft); color:var(--muted);}
+        }
+    </script>
 
-  /* ---------- EDUCATION ---------- */
-  .edu-row{
-    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
-    padding:18px 22px;
-    background:var(--bg-soft);
-    border-radius:14px;
-    margin-bottom:10px;
-  }
-  .edu-row:last-child{margin-bottom:0;}
-  .edu-degree{font-size:15.5px; font-weight:700; margin:0 0 4px;}
-  .edu-school{font-size:13.5px; color:var(--muted); margin:0;}
-  .edu-meta{
-    font-family:'IBM Plex Mono', monospace; font-size:12.5px; font-weight:700;
-    color:var(--green); background:var(--green-soft);
-    padding:6px 12px; border-radius:999px; white-space:nowrap;
-  }
-  .edu-meta span{display:block; color:var(--muted); font-weight:500; margin-top:2px; text-align:center;}
+    <link rel="stylesheet" href="style.css">
 
-  /* ---------- FOOTER / CONTACT ---------- */
-  footer{border-top:1px solid var(--line); padding:56px 0 40px;}
-  footer h2{
-    font-family:'Fraunces', serif; font-weight:700;
-    font-size:clamp(1.7rem,4vw,2.4rem); margin:0 0 26px; max-width:520px;
-  }
-  .contact-grid{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:36px;}
-  .contact-item{
-    font-size:13.5px; background:var(--bg-soft); border-radius:14px; padding:14px 18px;
-  }
-  .contact-item span{display:block; color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px; font-family:'IBM Plex Mono', monospace;}
-  .contact-item a{text-decoration:none; font-weight:600; color:var(--ink);}
-  .contact-item a:hover{color:var(--green);}
-  .foot-bottom{
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    font-size:12px; color:var(--muted); padding-top:20px; border-top:1px solid var(--line);
-  }
-</style>
 </head>
-<body>
 
-<header class="site-nav">
-  <div class="wrap nav-row">
-    <a class="nav-mark" href="#top">Shalmal L.</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#snapshot">About</a></li>
-      <li><a href="#numbers">Numbers</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
+<body class="bg-background text-gray-900 transition-all duration-500">
 
-<main id="top">
+    <!-- Scroll Progress -->
 
-  <section class="hero wrap">
-    <p class="eyebrow">Performance Marketing · Quick Commerce · Agri-Tech</p>
-    <h1>Shalmal Lande</h1>
-    <p class="role">Performance Marketing &amp; Growth Professional</p>
-    <p class="lede">I run performance and retention marketing for KisanKonnect's dairy subscription business — lifecycle automation, campaign planning, and funnel diagnostics for a quick-commerce audience that expects same-day answers.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-primary" href="mailto:shalmallande@gmail.com">Email me</a>
-      <a class="btn btn-secondary" href="https://linkedin.com/in/shalmal-lande-428341118" target="_blank" rel="noopener">Connect on LinkedIn</a>
-    </div>
-  </section>
-
-  <section class="kpi-section wrap" id="numbers">
-    <p class="kpi-heading">The numbers</p>
-    <div class="kpi-grid" id="kpi-strip">
-      <div class="kpi-card c-green">
-        <div class="kpi-value"><span class="kpi-num" data-target="23">0</span>%</div>
-        <div class="kpi-label">WoW growth in subscription orders from Day-0 onboarding offers</div>
-      </div>
-      <div class="kpi-card c-amber">
-        <div class="kpi-value"><span class="kpi-num" data-target="9">0</span>%</div>
-        <div class="kpi-label">MoM growth in active subscriptions</div>
-      </div>
-      <div class="kpi-card c-sky">
-        <div class="kpi-value"><span class="kpi-num" data-target="73">0</span>%</div>
-        <div class="kpi-label">MoM regular retention on lifecycle campaigns</div>
-      </div>
-      <div class="kpi-card c-coral">
-        <div class="kpi-value"><span class="kpi-num" data-target="38">0</span>%</div>
-        <div class="kpi-label">MoM reactivation retention for lapsed customers</div>
-      </div>
-      <div class="kpi-card c-violet">
-        <div class="kpi-value"><span class="kpi-num" data-target="77">0</span>%</div>
-        <div class="kpi-label">M1 retention on the subscription model, Q1 FY2026–27</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="snapshot wrap" id="snapshot">
-    <div class="section-head">
-      <h2>About</h2>
-      <div class="rule"></div>
-    </div>
-    <p>I've spent the last two-plus years owning performance and retention marketing for KisanKonnect's app and subscription business — briefing creative, automating lifecycle journeys, and reading cohort-level funnels closely enough to catch degrowth before it shows up in revenue.</p>
-    <p>Before that, I built my analytical instincts running supply chain operations for the same company. I recently completed my MBA in Supply Chain Management &amp; Operations, and I'm looking to grow further as a performance marketer.</p>
-  </section>
-
-  <section class="wrap" id="experience">
-    <div class="section-head">
-      <h2>Experience</h2>
-      <div class="rule"></div>
+    <div id="progressBar"
+        class="fixed top-0 left-0 h-1 bg-primary z-50 w-0">
     </div>
 
-    <div class="role-card">
-      <div class="role-top">
-        <p class="role-title">Performance Marketing Executive</p>
-        <span class="role-date">Mar 2026 — Present</span>
-      </div>
-      <p class="role-company">KisanKonnect Safe Food Pvt. Ltd. — Navi Mumbai</p>
-      <ul>
-        <li>Manage end-to-end performance marketing for KisanKonnect's dairy subscription model, driving customer acquisition and retention.</li>
-        <li>Send targeted push notifications and in-app messages to new, active, and low-wallet-balance subscribers to keep orders uninterrupted.</li>
-        <li>Own the app's in-app section — banners, flyers, creative and content briefing.</li>
-        <li>Automate customer journeys in CleverTap for personalized lifecycle experiences.</li>
-        <li>Plan and run Day-0 onboarding offers behind 23% WoW growth in subscription orders and 9% MoM growth in active subscriptions.</li>
-        <li>Monitor store-wise launch-to-conversion funnels, flag cohort-level degrowth, and coordinate targeted campaigns to recover it.</li>
-        <li>Drove 77% M1 retention on the subscription model in Q1 FY2026–27 through onboarding and early lifecycle optimization.</li>
-      </ul>
-      <div class="tool-tags">
-        <span class="tool-tag">CleverTap</span>
-        <span class="tool-tag">Google Sheets</span>
-        <span class="tool-tag">Excel</span>
-      </div>
-    </div>
+    <!-- Navigation -->
 
-    <div class="role-card">
-      <div class="role-top">
-        <p class="role-title">Performance Marketing Executive</p>
-        <span class="role-date">Nov 2023 — May 2024</span>
-      </div>
-      <p class="role-company">KisanKonnect Safe Food Pvt. Ltd. — Navi Mumbai</p>
-      <ul>
-        <li>Led consumer retention and reactivation, hitting 73% MoM regular retention and 38% MoM reactivation retention.</li>
-        <li>Designed and ran targeted campaigns for consumer reactivation and lifecycle management.</li>
-        <li>Managed end-to-end website and app operations — product sequencing, banners, UX flow.</li>
-        <li>Took KisanKonnect live on the ONDC e-commerce platform in a single day, full product listing included.</li>
-        <li>Planned weekly promotional offers and managed offer cost and budget against sales performance.</li>
-        <li>Led creative and content briefing for digital campaigns.</li>
-      </ul>
-      <div class="tool-tags">
-        <span class="tool-tag">MoEngage</span>
-        <span class="tool-tag">CleverTap</span>
-        <span class="tool-tag">Google Sheets</span>
-      </div>
-    </div>
+    <nav class="fixed w-full top-0 z-40 backdrop-blur-xl bg-white/70 border-b border-gray-200">
 
-    <div class="ops-card">
-      <p class="ops-heading">Operational foundation</p>
-      <p class="ops-sub">Two supply chain roles at the same company, condensed — the analytical groundwork behind the marketing work above.</p>
+        <div class="max-w-7xl mx-auto px-6">
 
-      <div class="ops-row">
-        <div class="ops-row-top">
-          <p class="ops-title">Supply Chain Executive</p>
-          <span class="ops-date">May 2024 — Sep 2025</span>
+            <div class="flex justify-between items-center h-20">
+
+                <h1 class="text-2xl font-black text-primary">
+
+                    Shalmal.
+
+                </h1>
+
+                <ul class="hidden md:flex gap-8 font-medium">
+
+                    <li><a href="#home" class="hover:text-primary transition">Home</a></li>
+
+                    <li><a href="#about" class="hover:text-primary transition">About</a></li>
+
+                    <li><a href="#experience" class="hover:text-primary transition">Experience</a></li>
+
+                    <li><a href="#skills" class="hover:text-primary transition">Skills</a></li>
+
+                    <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+
+                </ul>
+
+                <div class="flex items-center gap-4">
+
+                    <button id="themeToggle"
+                        class="text-xl">
+
+                        🌙
+
+                    </button>
+
+                    <button id="menuBtn"
+                        class="md:hidden text-3xl">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div id="mobileMenu"
+                class="hidden md:hidden pb-6">
+
+                <a href="#home" class="block py-2">Home</a>
+
+                <a href="#about" class="block py-2">About</a>
+
+                <a href="#experience" class="block py-2">Experience</a>
+
+                <a href="#skills" class="block py-2">Skills</a>
+
+                <a href="#contact" class="block py-2">Contact</a>
+
+            </div>
+
         </div>
-        <p class="ops-desc">Rebuilt operations after a compliance incident — lifted on-time delivery from 82% to 94% and cut RTO from 1.5% to 0.5% across 10,000+ daily shipments, while self-learning Tableau and Power BI for MIS reporting.</p>
-      </div>
-      <div class="ops-row">
-        <div class="ops-row-top">
-          <p class="ops-title">Junior Executive — Supply Chain</p>
-          <span class="ops-date">Sep 2021 — Nov 2023</span>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section id="home"
+        class="relative min-h-screen flex items-center overflow-hidden">
+
+        <!-- Background -->
+
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-background via-white to-card">
         </div>
-        <p class="ops-desc">Planned delivery routes across Mumbai and Pune and supported cluster sales as Sales Coordinator — the dashboard and stakeholder-management habits that carried into performance marketing.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="wrap" id="skills">
-    <div class="section-head">
-      <h2>Skills</h2>
-      <div class="rule"></div>
+        <div
+            class="absolute w-96 h-96 rounded-full bg-primary/10 blur-3xl top-20 -left-24">
+        </div>
+
+        <div
+            class="absolute w-80 h-80 rounded-full bg-accent/10 blur-3xl bottom-10 right-0">
+        </div>
+
+        <div
+            class="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- Left -->
+
+            <div>
+
+                <p class="uppercase tracking-[4px] text-primary font-semibold">
+
+                    Performance Marketing
+
+                </p>
+
+                <h1
+                    class="mt-6 text-5xl lg:text-7xl font-black leading-tight">
+
+                    Turning Data
+
+                    <br>
+
+                    Into Growth.
+
+                </h1>
+
+                <p
+                    class="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
+
+                    Performance Marketer focused on customer acquisition,
+                    retention,
+                    lifecycle marketing,
+                    lifecycle automation,
+                    customer engagement,
+                    and measurable business growth.
+
+                </p>
+
+                <div class="mt-12 flex flex-wrap gap-4">
+
+                    <a href="#experience"
+                        class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:scale-105 transition">
+
+                        View My Work
+
+                    </a>
+
+                    <a href="resume.pdf"
+                        target="_blank"
+                        class="px-8 py-4 border rounded-full hover:bg-card transition">
+
+                        Download Resume
+
+                    </a>
+
+                    <a href="#contact"
+                        class="px-8 py-4 border rounded-full hover:bg-card transition">
+
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="flex justify-center">
+
+                <div
+                    class="w-80 h-80 lg:w-[430px] lg:h-[430px] rounded-[40px] bg-white shadow-2xl border border-gray-200 overflow-hidden">
+
+                    <img
+                        src="profile.jpg"
+                        alt="Profile"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About section starts here in Part 2 -->
+  <!-- ================= ABOUT ================= -->
+
+<section id="about" class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- Left -->
+
+            <div>
+
+                <span
+                    class="text-primary uppercase tracking-[4px] font-semibold">
+
+                    About Me
+
+                </span>
+
+                <h2
+                    class="mt-5 text-4xl md:text-5xl font-black leading-tight">
+
+                    Building Growth Through
+                    <span class="text-primary">
+                        Systems,
+                    </span>
+                    Data &
+                    Customer Understanding.
+
+                </h2>
+
+                <p
+                    class="mt-8 text-lg leading-9 text-gray-600">
+
+                    My professional journey began in supply chain and operations,
+                    where solving real-world logistics challenges taught me how
+                    scalable systems are built.
+
+                </p>
+
+                <p
+                    class="mt-6 text-lg leading-9 text-gray-600">
+
+                    Working closely with operations, analytics and cross-functional
+                    teams gradually led me into performance marketing. Today I focus
+                    on customer acquisition, lifecycle marketing, CRM automation,
+                    retention and experimentation while bringing an operations-first
+                    mindset to every campaign.
+
+                </p>
+
+                <p
+                    class="mt-6 text-lg leading-9 text-gray-600">
+
+                    I believe sustainable growth comes from understanding customer
+                    behaviour, measuring everything and continuously improving
+                    processes—not simply increasing marketing spend.
+
+                </p>
+
+            </div>
+
+            <!-- Right -->
+
+            <div>
+
+                <div
+                    class="bg-card rounded-3xl p-10 shadow-xl border border-gray-200">
+
+                    <h3
+                        class="text-2xl font-bold mb-10">
+
+                        Career Journey
+
+                    </h3>
+
+                    <div class="space-y-8">
+
+                        <div class="flex items-center">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
+
+                                🚚
+
+                            </div>
+
+                            <div class="ml-5">
+
+                                <h4 class="font-bold">
+
+                                    Supply Chain
+
+                                </h4>
+
+                                <p class="text-gray-500">
+
+                                    Logistics • Planning • Vendor Coordination
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
+
+                        <div class="flex items-center">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
+
+                                ⚙️
+
+                            </div>
+
+                            <div class="ml-5">
+
+                                <h4 class="font-bold">
+
+                                    Operations
+
+                                </h4>
+
+                                <p class="text-gray-500">
+
+                                    SOP Development • KPI Tracking
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
+
+                        <div class="flex items-center">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
+
+                                📊
+
+                            </div>
+
+                            <div class="ml-5">
+
+                                <h4 class="font-bold">
+
+                                    Analytics
+
+                                </h4>
+
+                                <p class="text-gray-500">
+
+                                    Excel • Tableau • Power BI • SQL
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
+
+                        <div class="flex items-center">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
+
+                                📈
+
+                            </div>
+
+                            <div class="ml-5">
+
+                                <h4 class="font-bold">
+
+                                    Performance Marketing
+
+                                </h4>
+
+                                <p class="text-gray-500">
+
+                                    Growth • CRM • Lifecycle Marketing
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="skill-group primary">
-      <h3>Performance marketing &amp; growth</h3>
-      <div class="tag-cloud">
-        <span class="tag">Retention &amp; Performance Marketing</span>
-        <span class="tag">Customer Journey Automation</span>
-        <span class="tag">Campaign Planning &amp; Execution</span>
-        <span class="tag">CleverTap</span>
-        <span class="tag">MoEngage</span>
-        <span class="tag">Creative &amp; Content Briefing</span>
-        <span class="tag">ONDC Platform Management</span>
-        <span class="tag">Funnel &amp; Cohort Analysis</span>
-      </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience"
+    class="py-28 bg-background">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p
+                class="uppercase tracking-[4px] text-primary font-semibold">
+
+                Experience
+
+            </p>
+
+            <h2
+                class="text-5xl font-black mt-5">
+
+                Professional Journey
+
+            </h2>
+
+            <p
+                class="text-gray-600 mt-6 max-w-2xl mx-auto">
+
+                My experience spans operations, analytics and performance
+                marketing, helping businesses grow through data-driven decisions
+                and scalable systems.
+
+            </p>
+
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="relative mt-24">
+
+            <div
+                class="absolute left-5 top-0 bottom-0 w-1 bg-primary rounded-full">
+            </div>
+
+            <!-- Current -->
+
+            <div class="relative pl-20 mb-20">
+
+                <div
+                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
+
+                    <span class="text-primary font-bold">
+
+                        Mar 2026 – Present
+
+                    </span>
+
+                    <h3 class="text-3xl font-bold mt-3">
+
+                        Performance Marketing Executive
+
+                    </h3>
+
+                    <p class="text-gray-500">
+
+                        KisanKonnect Safe Food Pvt. Ltd.
+
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-gray-600">
+
+                        <li>• Managed customer acquisition and retention campaigns.</li>
+
+                        <li>• Automated lifecycle journeys using CleverTap.</li>
+
+                        <li>• Improved subscription growth through onboarding campaigns.</li>
+
+                        <li>• Optimized app conversion funnels.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Supply Chain Executive -->
+
+            <div class="relative pl-20 mb-20">
+
+                <div
+                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
+
+                    <span class="text-primary font-bold">
+
+                        May 2024 – Sep 2025
+
+                    </span>
+
+                    <h3 class="text-3xl font-bold">
+
+                        Supply Chain Executive
+
+                    </h3>
+
+                    <p class="text-gray-500">
+
+                        KisanKonnect Safe Food Pvt. Ltd.
+
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-gray-600">
+
+                        <li>• Managed 10,000+ daily shipments.</li>
+
+                        <li>• Improved on-time delivery to 94%.</li>
+
+                        <li>• Reduced Return-to-Origin rates.</li>
+
+                        <li>• Built operational dashboards.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Performance Marketing -->
+
+            <div class="relative pl-20 mb-20">
+
+                <div
+                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
+
+                    <span class="text-primary font-bold">
+
+                        Nov 2023 – May 2024
+
+                    </span>
+
+                    <h3 class="text-3xl font-bold">
+
+                        Performance Marketing Executive
+
+                    </h3>
+
+                    <p class="text-gray-500">
+
+                        KisanKonnect Safe Food Pvt. Ltd.
+
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-gray-600">
+
+                        <li>• Led retention and reactivation campaigns.</li>
+
+                        <li>• Managed app & website merchandising.</li>
+
+                        <li>• Executed promotional campaigns.</li>
+
+                        <li>• Launched ONDC platform successfully.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Junior Executive -->
+
+            <div class="relative pl-20">
+
+                <div
+                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
+
+                    <span class="text-primary font-bold">
+
+                        Sep 2021 – Nov 2023
+
+                    </span>
+
+                    <h3 class="text-3xl font-bold">
+
+                        Junior Executive – Supply Chain
+
+                    </h3>
+
+                    <p class="text-gray-500">
+
+                        KisanKonnect Safe Food Pvt. Ltd.
+
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-gray-600">
+
+                        <li>• Planned delivery routes across Mumbai & Pune.</li>
+
+                        <li>• Coordinated field teams and 3PL partners.</li>
+
+                        <li>• Improved last-mile operations.</li>
+
+                        <li>• Supported sales and delivery analytics.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="skill-group secondary">
-      <h3>Supporting: analytics &amp; operations</h3>
-      <div class="tag-cloud">
-        <span class="tag">Excel &amp; Google Sheets (Advanced)</span>
-        <span class="tag">Tableau &amp; Power BI</span>
-        <span class="tag">SQL (Basic)</span>
-        <span class="tag">KPI Tracking &amp; MIS Reporting</span>
-        <span class="tag">AI-based Reporting Automation</span>
-        <span class="tag">Supply Chain &amp; 3PL Coordination</span>
-        <span class="tag">Process Improvement &amp; SOPs</span>
-        <span class="tag">Cross-functional Collaboration</span>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <section class="wrap" id="education">
-    <div class="section-head">
-      <h2>Education</h2>
-      <div class="rule"></div>
+<!-- Part 3 Starts Here -->
+  <!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements" class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-primary font-semibold">
+
+                Achievements
+
+            </p>
+
+            <h2 class="text-5xl font-black mt-4">
+
+                Driving Measurable Results
+
+            </h2>
+
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+
+                Numbers tell stories. These milestones reflect my focus on
+                operational excellence, customer lifecycle optimization and
+                measurable business growth.
+
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
+
+                <h3 class="text-6xl font-black text-primary counter" data-target="23">0</h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    Week-on-Week Subscription Growth
+
+                </p>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+
+                <h3 class="text-6xl font-black text-primary counter" data-target="9">0</h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    Month-on-Month Active Subscribers
+
+                </p>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+
+                <h3 class="text-6xl font-black text-primary counter" data-target="94">0</h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    On-Time Delivery
+
+                </p>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+
+                <h3 class="text-5xl font-black text-primary">
+
+                    1.5% → 0.5%
+
+                </h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    Return-to-Origin Reduction
+
+                </p>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+
+                <h3 class="text-6xl font-black text-primary counter" data-target="73">0</h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    Customer Retention
+
+                </p>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+
+                <h3 class="text-6xl font-black text-primary counter" data-target="38">0</h3>
+
+                <p class="mt-4 text-xl font-semibold">
+
+                    Customer Reactivation
+
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="edu-row">
-      <div>
-        <p class="edu-degree">MBA — Supply Chain Management &amp; Operations</p>
-        <p class="edu-school">Sir Visvesaraya Institute of Technology, Nashik · SPPU</p>
-      </div>
-      <div class="edu-meta">CGPA 6.7/10<span>2024 – 2026</span></div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="py-28 bg-background">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-primary font-semibold">
+
+                Skills
+
+            </p>
+
+            <h2 class="text-5xl font-black mt-4">
+
+                Expertise & Tools
+
+            </h2>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 mt-20">
+
+            <!-- Growth -->
+
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+
+                    Growth Marketing
+
+                </h3>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <span class="skill">Performance Marketing</span>
+                    <span class="skill">Customer Acquisition</span>
+                    <span class="skill">Retention</span>
+                    <span class="skill">Lifecycle Marketing</span>
+                    <span class="skill">CRM</span>
+                    <span class="skill">Push Notifications</span>
+
+                </div>
+
+            </div>
+
+            <!-- Analytics -->
+
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+
+                    Analytics
+
+                </h3>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <span class="skill">Excel</span>
+                    <span class="skill">Google Sheets</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Tableau</span>
+                    <span class="skill">Power BI</span>
+
+                </div>
+
+            </div>
+
+            <!-- Marketing Tools -->
+
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+
+                    Marketing Platforms
+
+                </h3>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <span class="skill">CleverTap</span>
+                    <span class="skill">MoEngage</span>
+                    <span class="skill">Google Analytics</span>
+                    <span class="skill">Google Ads</span>
+                    <span class="skill">Meta Ads</span>
+
+                </div>
+
+            </div>
+
+            <!-- Operations -->
+
+            <div class="bg-white rounded-3xl shadow-xl p-8">
+
+                <h3 class="text-2xl font-bold mb-6 text-primary">
+
+                    Operations
+
+                </h3>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <span class="skill">Supply Chain</span>
+                    <span class="skill">Logistics</span>
+                    <span class="skill">Vendor Management</span>
+                    <span class="skill">Process Improvement</span>
+                    <span class="skill">SOP Development</span>
+                    <span class="skill">KPI Tracking</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="edu-row">
-      <div>
-        <p class="edu-degree">B.Com — Banking &amp; Finance</p>
-        <p class="edu-school">Arts, Commerce &amp; Science College, Shrirampur · SPPU</p>
-      </div>
-      <div class="edu-meta">CGPA 8.32/10<span>2019 – 2022</span></div>
+</section>
+
+<!-- ================= PHILOSOPHY ================= -->
+
+<section class="py-28 bg-primary text-white">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="text-5xl font-black">
+
+            Marketing Philosophy
+
+        </h2>
+
+        <blockquote
+            class="mt-12 text-2xl md:text-3xl leading-relaxed font-light italic">
+
+            “Growth isn't about spending more—
+            it's about understanding customer behaviour,
+            measuring everything,
+            experimenting continuously,
+            and building systems that scale.”
+
+        </blockquote>
+
     </div>
 
-    <div class="edu-row">
-      <div>
-        <p class="edu-degree">Higher Secondary Certificate</p>
-        <p class="edu-school">C.D. Jain College of Commerce, Shrirampur · Maharashtra State Board</p>
-      </div>
-      <div class="edu-meta">75.54%<span>2014 – 2016</span></div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+
+<section id="cases" class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-primary font-semibold">
+
+                Featured Case Studies
+
+            </p>
+
+            <h2 class="text-5xl font-black mt-5">
+
+                Coming Soon
+
+            </h2>
+
+            <p class="text-gray-600 mt-6">
+
+                Premium marketing case studies will be added here.
+
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10 mt-20">
+
+            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
+
+                <img src="https://placehold.co/600x400"
+                    class="w-full">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold">
+
+                        Customer Acquisition
+
+                    </h3>
+
+                    <p class="mt-4 text-gray-600">
+
+                        Placeholder case study.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
+
+                <img src="https://placehold.co/600x400"
+                    class="w-full">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold">
+
+                        CRM Automation
+
+                    </h3>
+
+                    <p class="mt-4 text-gray-600">
+
+                        Placeholder case study.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
+
+                <img src="https://placehold.co/600x400"
+                    class="w-full">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold">
+
+                        Retention Strategy
+
+                    </h3>
+
+                    <p class="mt-4 text-gray-600">
+
+                        Placeholder case study.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="edu-row">
-      <div>
-        <p class="edu-degree">Secondary School Certificate</p>
-        <p class="edu-school">St. Vincent De Paul High School, Shrirampur · Maharashtra State Board</p>
-      </div>
-      <div class="edu-meta">66.40%<span>2014</span></div>
-    </div>
-  </section>
+</section>
 
-</main>
+<!-- Part 4 Starts Here -->
+  <!-- ================= RESUME ================= -->
 
-<footer id="contact">
-  <div class="wrap">
-    <h2>Let's talk about growing your subscriber base.</h2>
-    <div class="contact-grid">
-      <div class="contact-item"><span>Email</span><a href="mailto:shalmallande@gmail.com">shalmallande@gmail.com</a></div>
-      <div class="contact-item"><span>Phone</span><a href="tel:+919136284292">+91 91362 84292</a></div>
-      <div class="contact-item"><span>LinkedIn</span><a href="https://linkedin.com/in/shalmal-lande-428341118" target="_blank" rel="noopener">shalmal-lande-428341118</a></div>
-      <div class="contact-item"><span>Location</span>Navi Mumbai, Maharashtra</div>
+<section id="resume" class="py-28 bg-background">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-primary font-semibold">
+                Resume
+            </p>
+
+            <h2 class="text-5xl font-black mt-4">
+                My Professional Resume
+            </h2>
+
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+                Download my latest resume or view it in your browser.
+            </p>
+
+        </div>
+
+        <div class="mt-16 bg-white rounded-3xl shadow-2xl p-10 text-center">
+
+            <div
+                class="w-28 h-28 mx-auto rounded-full bg-primary text-white flex items-center justify-center text-5xl">
+
+                📄
+
+            </div>
+
+            <h3 class="mt-8 text-3xl font-bold">
+
+                Resume
+
+            </h3>
+
+            <p class="mt-4 text-gray-600">
+
+                ATS-friendly version based on this portfolio.
+
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+                <a href="resume.pdf"
+                    target="_blank"
+                    class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:scale-105 transition">
+
+                    View Resume
+
+                </a>
+
+                <a href="resume.pdf"
+                    download
+                    class="px-8 py-4 border rounded-full hover:bg-card transition">
+
+                    Download PDF
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="foot-bottom">
-      <span>Shalmal Lande</span>
-      <span>Updated July 2026</span>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-primary font-semibold">
+
+                Testimonials
+
+            </p>
+
+            <h2 class="text-5xl font-black mt-5">
+
+                Kind Words
+
+            </h2>
+
+            <p class="mt-6 text-gray-600">
+
+                Placeholder testimonials that can be replaced later.
+
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-20">
+
+            <div class="bg-card rounded-3xl p-8">
+
+                <p class="italic text-gray-600">
+
+                    "Placeholder testimonial."
+
+                </p>
+
+                <h4 class="mt-8 font-bold">
+
+                    Future Manager
+
+                </h4>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8">
+
+                <p class="italic text-gray-600">
+
+                    "Placeholder testimonial."
+
+                </p>
+
+                <h4 class="mt-8 font-bold">
+
+                    Future Client
+
+                </h4>
+
+            </div>
+
+            <div class="bg-card rounded-3xl p-8">
+
+                <p class="italic text-gray-600">
+
+                    "Placeholder testimonial."
+
+                </p>
+
+                <h4 class="mt-8 font-bold">
+
+                    Future Colleague
+
+                </h4>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+    class="py-28 bg-primary text-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px]">
+
+                Contact
+
+            </p>
+
+            <h2 class="text-5xl font-black mt-5">
+
+                Let's Build Something Great
+
+            </h2>
+
+            <p class="mt-6 max-w-2xl mx-auto text-white/80">
+
+                Whether it's growth marketing, analytics,
+                operations or customer lifecycle strategy,
+                I'd love to connect.
+
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-20 mt-20">
+
+            <div>
+
+                <h3 class="text-3xl font-bold">
+
+                    Get in Touch
+
+                </h3>
+
+                <div class="mt-10 space-y-6 text-lg">
+
+                    <p>
+
+                        📧 shalmallande@gmail.com
+
+                    </p>
+
+                    <p>
+
+                        📱 +91 9136284292
+
+                    </p>
+
+                    <p>
+
+                        📍 Navi Mumbai, Maharashtra
+
+                    </p>
+
+                    <p>
+
+                        💼 LinkedIn
+
+                    </p>
+
+                </div>
+
+                <div class="mt-12">
+
+                    <a href="resume.pdf"
+                        download
+                        class="bg-white text-primary px-8 py-4 rounded-full font-bold">
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <form
+                    class="bg-white rounded-3xl p-10 text-gray-900">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="w-full border rounded-xl p-4 mb-5">
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="w-full border rounded-xl p-4 mb-5">
+
+                    <textarea
+                        rows="6"
+                        placeholder="Message"
+                        class="w-full border rounded-xl p-4"></textarea>
+
+                    <button
+                        class="mt-6 w-full bg-primary text-white py-4 rounded-xl font-bold">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#111] text-white py-12">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+            <div>
+
+                <h3 class="text-2xl font-black">
+
+                    Shalmal.
+
+                </h3>
+
+                <p class="text-gray-400 mt-2">
+
+                    Turning Data Into Growth.
+
+                </p>
+
+            </div>
+
+            <div class="flex gap-6">
+
+                <a href="#" class="hover:text-accent">LinkedIn</a>
+
+                <a href="mailto:shalmallande@gmail.com"
+                    class="hover:text-accent">
+
+                    Email
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr class="my-8 border-gray-700">
+
+        <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <p class="text-gray-400">
+
+                © 2026 Shalmal Lande. All Rights Reserved.
+
+            </p>
+
+            <p class="text-gray-400">
+
+                Built with ❤️ by Shalmal Lande
+
+            </p>
+
+        </div>
+
+    </div>
+
 </footer>
 
-<script>
-  // Mobile nav toggle
-  (function(){
-    var toggle = document.getElementById('nav-toggle');
-    var links = document.getElementById('nav-links');
-    if(!toggle || !links) return;
-
-    function closeMenu(){
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }
-
-    toggle.addEventListener('click', function(){
-      var isOpen = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-
-    links.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', closeMenu);
-    });
-
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape') closeMenu();
-    });
-  })();
-</script>
-
-<script>
-  // Count-up animation for the KPI grid, respecting reduced motion.
-  (function(){
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var nums = document.querySelectorAll('.kpi-num');
-
-    function animate(el){
-      var target = parseInt(el.getAttribute('data-target'), 10);
-      if(reduce){ el.textContent = target; return; }
-      var start = null;
-      var duration = 900;
-      function step(ts){
-        if(!start) start = ts;
-        var progress = Math.min((ts - start) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(eased * target);
-        if(progress < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-
-    if('IntersectionObserver' in window){
-      var seen = false;
-      var observer = new IntersectionObserver(function(entries){
-        entries.forEach(function(entry){
-          if(entry.isIntersecting && !seen){
-            seen = true;
-            nums.forEach(animate);
-            observer.disconnect();
-          }
-        });
-      }, {threshold:0.4});
-      var strip = document.getElementById('kpi-strip');
-      if(strip) observer.observe(strip);
-    } else {
-      nums.forEach(animate);
-    }
-  })();
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
