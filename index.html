@@ -1,1382 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Shalmal Lande | Performance Marketing Portfolio</title>
+<meta charset="UTF-8">
 
-    <meta name="description"
-        content="Performance Marketing, Lifecycle Marketing, Supply Chain, Analytics and Growth Portfolio of Shalmal Lande.">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <meta name="keywords"
-        content="Performance Marketing, Growth Marketing, CRM, CleverTap, MoEngage, Analytics, Supply Chain">
+<title>
+Shalmal Lande | Performance Marketing
+</title>
 
-    <meta name="author" content="Shalmal Lande">
+<meta name="description"
+content="Performance Marketing Portfolio of Shalmal Lande">
 
-    <meta property="og:title" content="Shalmal Lande | Turning Data Into Growth">
-    <meta property="og:description"
-        content="Performance Marketing • Analytics • Growth • Operations">
-    <meta property="og:type" content="website">
+<meta name="author"
+content="Shalmal Lande">
 
-    <link rel="icon" href="favicon.ico">
+<meta property="og:title"
+content="Turning Data Into Growth">
 
-    <!-- Google Font -->
+<meta property="og:description"
+content="Performance Marketing • CRM • Analytics">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon"
+href="favicon.ico">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-    <!-- Tailwind -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-
-            darkMode: "class",
-
-            theme: {
-
-                extend: {
-
-                    colors: {
-
-                        primary: "#1E4D3D",
-                        accent: "#C7863C",
-                        background: "#F8F7F3",
-                        card: "#F3EFE6"
-
-                    }
-
-                }
-
-            }
-
-        }
-    </script>
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
-<body class="bg-background text-gray-900 transition-all duration-500">
+<body>
 
-    <!-- Scroll Progress -->
+<!-- Scroll Progress -->
 
-    <div id="progressBar"
-        class="fixed top-0 left-0 h-1 bg-primary z-50 w-0">
-    </div>
+<div id="progress"></div>
 
-    <!-- Navigation -->
+<!-- ================= NAVIGATION ================= -->
 
-    <nav class="fixed w-full top-0 z-40 backdrop-blur-xl bg-white/70 border-b border-gray-200">
+<header>
 
-        <div class="max-w-7xl mx-auto px-6">
+<nav class="navbar">
 
-            <div class="flex justify-between items-center h-20">
+<div class="container">
 
-                <h1 class="text-2xl font-black text-primary">
+<a href="#hero"
+class="logo">
 
-                    Shalmal.
+Shalmal.
 
-                </h1>
+</a>
 
-                <ul class="hidden md:flex gap-8 font-medium">
+<ul class="nav-links">
 
-                    <li><a href="#home" class="hover:text-primary transition">Home</a></li>
+<li><a href="#about">About</a></li>
 
-                    <li><a href="#about" class="hover:text-primary transition">About</a></li>
+<li><a href="#expertise">Expertise</a></li>
 
-                    <li><a href="#experience" class="hover:text-primary transition">Experience</a></li>
+<li><a href="#experience">Experience</a></li>
 
-                    <li><a href="#skills" class="hover:text-primary transition">Skills</a></li>
+<li><a href="#resume">Resume</a></li>
 
-                    <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+<li><a href="#contact">Contact</a></li>
 
-                </ul>
+</ul>
 
-                <div class="flex items-center gap-4">
+<div class="nav-buttons">
 
-                    <button id="themeToggle"
-                        class="text-xl">
+<button id="themeBtn">
 
-                        🌙
+🌙
 
-                    </button>
+</button>
 
-                    <button id="menuBtn"
-                        class="md:hidden text-3xl">
+<button id="menuBtn">
 
-                        ☰
+☰
 
-                    </button>
+</button>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-            <!-- Mobile Menu -->
+</nav>
 
-            <div id="mobileMenu"
-                class="hidden md:hidden pb-6">
+</header>
 
-                <a href="#home" class="block py-2">Home</a>
+<!-- ================= HERO ================= -->
 
-                <a href="#about" class="block py-2">About</a>
+<section
+id="hero">
 
-                <a href="#experience" class="block py-2">Experience</a>
+<div class="container hero-grid">
 
-                <a href="#skills" class="block py-2">Skills</a>
+<div class="hero-content">
 
-                <a href="#contact" class="block py-2">Contact</a>
+<p class="eyebrow">
 
-            </div>
+PERFORMANCE MARKETING
 
-        </div>
+</p>
 
-    </nav>
+<h1>
 
-    <!-- Hero -->
+Turning Data
 
-    <section id="home"
-        class="relative min-h-screen flex items-center overflow-hidden">
+<br>
 
-        <!-- Background -->
+Into Growth.
 
-        <div
-            class="absolute inset-0 bg-gradient-to-br from-background via-white to-card">
-        </div>
+</h1>
 
-        <div
-            class="absolute w-96 h-96 rounded-full bg-primary/10 blur-3xl top-20 -left-24">
-        </div>
+<p class="subtitle">
 
-        <div
-            class="absolute w-80 h-80 rounded-full bg-accent/10 blur-3xl bottom-10 right-0">
-        </div>
+Performance Marketing Executive helping businesses grow through customer acquisition, lifecycle marketing, CRM automation, customer retention, experimentation and analytics.
 
-        <div
-            class="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-20 items-center">
+</p>
 
-            <!-- Left -->
+<div class="hero-buttons">
 
-            <div>
+<a href="#experience"
+class="primary-btn">
 
-                <p class="uppercase tracking-[4px] text-primary font-semibold">
+Explore My Work
 
-                    Performance Marketing
+</a>
 
-                </p>
+<a href="resume.pdf"
+class="secondary-btn"
+target="_blank">
 
-                <h1
-                    class="mt-6 text-5xl lg:text-7xl font-black leading-tight">
+Resume
 
-                    Turning Data
+</a>
 
-                    <br>
+<a href="#contact"
+class="secondary-btn">
 
-                    Into Growth.
+Contact
 
-                </h1>
+</a>
 
-                <p
-                    class="mt-8 text-xl text-gray-600 leading-9 max-w-xl">
+</div>
 
-                    Performance Marketer focused on customer acquisition,
-                    retention,
-                    lifecycle marketing,
-                    lifecycle automation,
-                    customer engagement,
-                    and measurable business growth.
+</div>
 
-                </p>
+<div class="hero-image">
 
-                <div class="mt-12 flex flex-wrap gap-4">
+<div class="image-card">
 
-                    <a href="#experience"
-                        class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:scale-105 transition">
+<img
+src="profile.jpg"
+alt="Shalmal Lande">
 
-                        View My Work
+</div>
 
-                    </a>
+</div>
 
-                    <a href="Shalmal Lande - Resume 17 May 2026.pdf"
-                        target="_blank"
-                        class="px-8 py-4 border rounded-full hover:bg-card transition">
+</div>
 
-                        Download Resume
+<div class="scroll-indicator">
 
-                    </a>
+↓
 
-                    <a href="#contact"
-                        class="px-8 py-4 border rounded-full hover:bg-card transition">
+</div>
 
-                        Contact Me
+</section>
 
-                    </a>
+<!-- ================= GROWTH SNAPSHOT ================= -->
 
-                </div>
+<section
+id="snapshot">
 
-            </div>
+</section>
 
-            <!-- Right -->
+<!-- ================= ABOUT ================= -->
 
-            <div class="flex justify-center">
+<section
+id="about">
 
-                <div
-                    class="w-80 h-80 lg:w-[430px] lg:h-[430px] rounded-[40px] bg-white shadow-2xl border border-gray-200 overflow-hidden">
+</section>
 
-                    <img
-                        src="profile.jpg"
-                        alt="Profile"
-                        class="w-full h-full object-cover">
+<!-- ================= EXPERTISE ================= -->
 
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- About section starts here in Part 2 -->
-  <!-- ================= ABOUT ================= -->
-
-<section id="about" class="py-28 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="grid lg:grid-cols-2 gap-20 items-center">
-
-            <!-- Left -->
-
-            <div>
-
-                <span
-                    class="text-primary uppercase tracking-[4px] font-semibold">
-
-                    About Me
-
-                </span>
-
-                <h2
-                    class="mt-5 text-4xl md:text-5xl font-black leading-tight">
-
-                    Building Growth Through
-                    <span class="text-primary">
-                        Systems,
-                    </span>
-                    Data &
-                    Customer Understanding.
-
-                </h2>
-
-                <p
-                    class="mt-8 text-lg leading-9 text-gray-600">
-
-                    My professional journey began in supply chain and operations,
-                    where solving real-world logistics challenges taught me how
-                    scalable systems are built.
-
-                </p>
-
-                <p
-                    class="mt-6 text-lg leading-9 text-gray-600">
-
-                    Working closely with operations, analytics and cross-functional
-                    teams gradually led me into performance marketing. Today I focus
-                    on customer acquisition, lifecycle marketing, CRM automation,
-                    retention and experimentation while bringing an operations-first
-                    mindset to every campaign.
-
-                </p>
-
-                <p
-                    class="mt-6 text-lg leading-9 text-gray-600">
-
-                    I believe sustainable growth comes from understanding customer
-                    behaviour, measuring everything and continuously improving
-                    processes—not simply increasing marketing spend.
-
-                </p>
-
-            </div>
-
-            <!-- Right -->
-
-            <div>
-
-                <div
-                    class="bg-card rounded-3xl p-10 shadow-xl border border-gray-200">
-
-                    <h3
-                        class="text-2xl font-bold mb-10">
-
-                        Career Journey
-
-                    </h3>
-
-                    <div class="space-y-8">
-
-                        <div class="flex items-center">
-
-                            <div
-                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
-
-                                🚚
-
-                            </div>
-
-                            <div class="ml-5">
-
-                                <h4 class="font-bold">
-
-                                    Supply Chain
-
-                                </h4>
-
-                                <p class="text-gray-500">
-
-                                    Logistics • Planning • Vendor Coordination
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
-
-                        <div class="flex items-center">
-
-                            <div
-                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
-
-                                ⚙️
-
-                            </div>
-
-                            <div class="ml-5">
-
-                                <h4 class="font-bold">
-
-                                    Operations
-
-                                </h4>
-
-                                <p class="text-gray-500">
-
-                                    SOP Development • KPI Tracking
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
-
-                        <div class="flex items-center">
-
-                            <div
-                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
-
-                                📊
-
-                            </div>
-
-                            <div class="ml-5">
-
-                                <h4 class="font-bold">
-
-                                    Analytics
-
-                                </h4>
-
-                                <p class="text-gray-500">
-
-                                    Excel • Tableau • Power BI • SQL
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="ml-6 h-10 border-l-2 border-primary"></div>
-
-                        <div class="flex items-center">
-
-                            <div
-                                class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-xl">
-
-                                📈
-
-                            </div>
-
-                            <div class="ml-5">
-
-                                <h4 class="font-bold">
-
-                                    Performance Marketing
-
-                                </h4>
-
-                                <p class="text-gray-500">
-
-                                    Growth • CRM • Lifecycle Marketing
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+<section
+id="expertise">
 
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
 
-<section id="experience"
-    class="py-28 bg-background">
-
-    <div class="max-w-6xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p
-                class="uppercase tracking-[4px] text-primary font-semibold">
-
-                Experience
-
-            </p>
-
-            <h2
-                class="text-5xl font-black mt-5">
-
-                Professional Journey
-
-            </h2>
-
-            <p
-                class="text-gray-600 mt-6 max-w-2xl mx-auto">
-
-                My experience spans operations, analytics and performance
-                marketing, helping businesses grow through data-driven decisions
-                and scalable systems.
-
-            </p>
-
-        </div>
-
-        <!-- Timeline -->
-
-        <div class="relative mt-24">
-
-            <div
-                class="absolute left-5 top-0 bottom-0 w-1 bg-primary rounded-full">
-            </div>
-
-            <!-- Current -->
-
-            <div class="relative pl-20 mb-20">
-
-                <div
-                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
-                </div>
-
-                <div
-                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
-
-                    <span class="text-primary font-bold">
-
-                        Mar 2026 – Present
-
-                    </span>
-
-                    <h3 class="text-3xl font-bold mt-3">
-
-                        Performance Marketing Executive
-
-                    </h3>
-
-                    <p class="text-gray-500">
-
-                        KisanKonnect Safe Food Pvt. Ltd.
-
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-600">
-
-                        <li>• Managed customer acquisition and retention campaigns.</li>
-
-                        <li>• Automated lifecycle journeys using CleverTap.</li>
-
-                        <li>• Improved subscription growth through onboarding campaigns.</li>
-
-                        <li>• Optimized app conversion funnels.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <!-- Supply Chain Executive -->
-
-            <div class="relative pl-20 mb-20">
-
-                <div
-                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
-                </div>
-
-                <div
-                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
-
-                    <span class="text-primary font-bold">
-
-                        May 2024 – Sep 2025
-
-                    </span>
-
-                    <h3 class="text-3xl font-bold">
-
-                        Supply Chain Executive
-
-                    </h3>
-
-                    <p class="text-gray-500">
-
-                        KisanKonnect Safe Food Pvt. Ltd.
-
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-600">
-
-                        <li>• Managed 10,000+ daily shipments.</li>
-
-                        <li>• Improved on-time delivery to 94%.</li>
-
-                        <li>• Reduced Return-to-Origin rates.</li>
-
-                        <li>• Built operational dashboards.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <!-- Performance Marketing -->
-
-            <div class="relative pl-20 mb-20">
-
-                <div
-                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
-                </div>
-
-                <div
-                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
-
-                    <span class="text-primary font-bold">
-
-                        Nov 2023 – May 2024
-
-                    </span>
-
-                    <h3 class="text-3xl font-bold">
-
-                        Performance Marketing Executive
-
-                    </h3>
-
-                    <p class="text-gray-500">
-
-                        KisanKonnect Safe Food Pvt. Ltd.
-
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-600">
-
-                        <li>• Led retention and reactivation campaigns.</li>
-
-                        <li>• Managed app & website merchandising.</li>
-
-                        <li>• Executed promotional campaigns.</li>
-
-                        <li>• Launched ONDC platform successfully.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <!-- Junior Executive -->
-
-            <div class="relative pl-20">
-
-                <div
-                    class="absolute left-0 top-2 w-10 h-10 rounded-full bg-primary border-4 border-white">
-                </div>
-
-                <div
-                    class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8">
-
-                    <span class="text-primary font-bold">
-
-                        Sep 2021 – Nov 2023
-
-                    </span>
-
-                    <h3 class="text-3xl font-bold">
-
-                        Junior Executive – Supply Chain
-
-                    </h3>
-
-                    <p class="text-gray-500">
-
-                        KisanKonnect Safe Food Pvt. Ltd.
-
-                    </p>
-
-                    <ul class="mt-6 space-y-3 text-gray-600">
-
-                        <li>• Planned delivery routes across Mumbai & Pune.</li>
-
-                        <li>• Coordinated field teams and 3PL partners.</li>
-
-                        <li>• Improved last-mile operations.</li>
-
-                        <li>• Supported sales and delivery analytics.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Part 3 Starts Here -->
-  <!-- ================= ACHIEVEMENTS ================= -->
-
-<section id="achievements" class="py-28 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px] text-primary font-semibold">
-
-                Achievements
-
-            </p>
-
-            <h2 class="text-5xl font-black mt-4">
-
-                Driving Measurable Results
-
-            </h2>
-
-            <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
-
-                Numbers tell stories. These milestones reflect my focus on
-                operational excellence, customer lifecycle optimization and
-                measurable business growth.
-
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
-
-                <h3 class="text-6xl font-black text-primary counter" data-target="23">0</h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    Week-on-Week Subscription Growth
-
-                </p>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
-
-                <h3 class="text-6xl font-black text-primary counter" data-target="9">0</h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    Month-on-Month Active Subscribers
-
-                </p>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
-
-                <h3 class="text-6xl font-black text-primary counter" data-target="94">0</h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    On-Time Delivery
-
-                </p>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
-
-                <h3 class="text-5xl font-black text-primary">
-
-                    1.5% → 0.5%
-
-                </h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    Return-to-Origin Reduction
-
-                </p>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
-
-                <h3 class="text-6xl font-black text-primary counter" data-target="73">0</h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    Customer Retention
-
-                </p>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
-
-                <h3 class="text-6xl font-black text-primary counter" data-target="38">0</h3>
-
-                <p class="mt-4 text-xl font-semibold">
-
-                    Customer Reactivation
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills" class="py-28 bg-background">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px] text-primary font-semibold">
-
-                Skills
-
-            </p>
-
-            <h2 class="text-5xl font-black mt-4">
-
-                Expertise & Tools
-
-            </h2>
-
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12 mt-20">
-
-            <!-- Growth -->
-
-            <div class="bg-white rounded-3xl shadow-xl p-8">
-
-                <h3 class="text-2xl font-bold mb-6 text-primary">
-
-                    Growth Marketing
-
-                </h3>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <span class="skill">Performance Marketing</span>
-                    <span class="skill">Customer Acquisition</span>
-                    <span class="skill">Retention</span>
-                    <span class="skill">Lifecycle Marketing</span>
-                    <span class="skill">CRM</span>
-                    <span class="skill">Push Notifications</span>
-
-                </div>
-
-            </div>
-
-            <!-- Analytics -->
-
-            <div class="bg-white rounded-3xl shadow-xl p-8">
-
-                <h3 class="text-2xl font-bold mb-6 text-primary">
-
-                    Analytics
-
-                </h3>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <span class="skill">Excel</span>
-                    <span class="skill">Google Sheets</span>
-                    <span class="skill">SQL</span>
-                    <span class="skill">Tableau</span>
-                    <span class="skill">Power BI</span>
-
-                </div>
-
-            </div>
-
-            <!-- Marketing Tools -->
-
-            <div class="bg-white rounded-3xl shadow-xl p-8">
-
-                <h3 class="text-2xl font-bold mb-6 text-primary">
-
-                    Marketing Platforms
-
-                </h3>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <span class="skill">CleverTap</span>
-                    <span class="skill">MoEngage</span>
-                    <span class="skill">Google Analytics</span>
-                    <span class="skill">Google Ads</span>
-                    <span class="skill">Meta Ads</span>
-
-                </div>
-
-            </div>
-
-            <!-- Operations -->
-
-            <div class="bg-white rounded-3xl shadow-xl p-8">
-
-                <h3 class="text-2xl font-bold mb-6 text-primary">
-
-                    Operations
-
-                </h3>
-
-                <div class="flex flex-wrap gap-4">
-
-                    <span class="skill">Supply Chain</span>
-                    <span class="skill">Logistics</span>
-                    <span class="skill">Vendor Management</span>
-                    <span class="skill">Process Improvement</span>
-                    <span class="skill">SOP Development</span>
-                    <span class="skill">KPI Tracking</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= PHILOSOPHY ================= -->
-
-<section class="py-28 bg-primary text-white">
-
-    <div class="max-w-5xl mx-auto px-6 text-center">
-
-        <h2 class="text-5xl font-black">
-
-            Marketing Philosophy
-
-        </h2>
-
-        <blockquote
-            class="mt-12 text-2xl md:text-3xl leading-relaxed font-light italic">
-
-            “Growth isn't about spending more—
-            it's about understanding customer behaviour,
-            measuring everything,
-            experimenting continuously,
-            and building systems that scale.”
-
-        </blockquote>
-
-    </div>
+<section
+id="experience">
 
 </section>
 
 <!-- ================= CASE STUDIES ================= -->
 
-<section id="cases" class="py-28 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px] text-primary font-semibold">
-
-                Featured Case Studies
-
-            </p>
-
-            <h2 class="text-5xl font-black mt-5">
-
-                Coming Soon
-
-            </h2>
-
-            <p class="text-gray-600 mt-6">
-
-                Premium marketing case studies will be added here.
-
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-10 mt-20">
-
-            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
-
-                <img src="https://placehold.co/600x400"
-                    class="w-full">
-
-                <div class="p-8">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Customer Acquisition
-
-                    </h3>
-
-                    <p class="mt-4 text-gray-600">
-
-                        Placeholder case study.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
-
-                <img src="https://placehold.co/600x400"
-                    class="w-full">
-
-                <div class="p-8">
-
-                    <h3 class="text-2xl font-bold">
-
-                        CRM Automation
-
-                    </h3>
-
-                    <p class="mt-4 text-gray-600">
-
-                        Placeholder case study.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="rounded-3xl overflow-hidden bg-card shadow-xl">
-
-                <img src="https://placehold.co/600x400"
-                    class="w-full">
-
-                <div class="p-8">
-
-                    <h3 class="text-2xl font-bold">
-
-                        Retention Strategy
-
-                    </h3>
-
-                    <p class="mt-4 text-gray-600">
-
-                        Placeholder case study.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+<section
+id="cases">
 
 </section>
 
-<!-- Part 4 Starts Here -->
-  <!-- ================= RESUME ================= -->
+<!-- ================= RESUME ================= -->
 
-<section id="resume" class="py-28 bg-background">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px] text-primary font-semibold">
-                Resume
-            </p>
-
-            <h2 class="text-5xl font-black mt-4">
-                My Professional Resume
-            </h2>
-
-            <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
-                Download my latest resume or view it in your browser.
-            </p>
-
-        </div>
-
-        <div class="mt-16 bg-white rounded-3xl shadow-2xl p-10 text-center">
-
-            <div
-                class="w-28 h-28 mx-auto rounded-full bg-primary text-white flex items-center justify-center text-5xl">
-
-                📄
-
-            </div>
-
-            <h3 class="mt-8 text-3xl font-bold">
-
-                Resume
-
-            </h3>
-
-            <p class="mt-4 text-gray-600">
-
-                ATS-friendly version based on this portfolio.
-
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-5 mt-10">
-
-                <a href="resume.pdf"
-                    target="_blank"
-                    class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:scale-105 transition">
-
-                    View Resume
-
-                </a>
-
-                <a href="resume.pdf"
-                    download
-                    class="px-8 py-4 border rounded-full hover:bg-card transition">
-
-                    Download PDF
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= TESTIMONIALS ================= -->
-
-<section class="py-28 bg-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px] text-primary font-semibold">
-
-                Testimonials
-
-            </p>
-
-            <h2 class="text-5xl font-black mt-5">
-
-                Kind Words
-
-            </h2>
-
-            <p class="mt-6 text-gray-600">
-
-                Placeholder testimonials that can be replaced later.
-
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 mt-20">
-
-            <div class="bg-card rounded-3xl p-8">
-
-                <p class="italic text-gray-600">
-
-                    "Placeholder testimonial."
-
-                </p>
-
-                <h4 class="mt-8 font-bold">
-
-                    Future Manager
-
-                </h4>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8">
-
-                <p class="italic text-gray-600">
-
-                    "Placeholder testimonial."
-
-                </p>
-
-                <h4 class="mt-8 font-bold">
-
-                    Future Client
-
-                </h4>
-
-            </div>
-
-            <div class="bg-card rounded-3xl p-8">
-
-                <p class="italic text-gray-600">
-
-                    "Placeholder testimonial."
-
-                </p>
-
-                <h4 class="mt-8 font-bold">
-
-                    Future Colleague
-
-                </h4>
-
-            </div>
-
-        </div>
-
-    </div>
+<section
+id="resume">
 
 </section>
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact"
-    class="py-28 bg-primary text-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center">
-
-            <p class="uppercase tracking-[4px]">
-
-                Contact
-
-            </p>
-
-            <h2 class="text-5xl font-black mt-5">
-
-                Let's Build Something Great
-
-            </h2>
-
-            <p class="mt-6 max-w-2xl mx-auto text-white/80">
-
-                Whether it's growth marketing, analytics,
-                operations or customer lifecycle strategy,
-                I'd love to connect.
-
-            </p>
-
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-20 mt-20">
-
-            <div>
-
-                <h3 class="text-3xl font-bold">
-
-                    Get in Touch
-
-                </h3>
-
-                <div class="mt-10 space-y-6 text-lg">
-
-                    <p>
-
-                        📧 shalmallande@gmail.com
-
-                    </p>
-
-                    <p>
-
-                        📱 +91 9136284292
-
-                    </p>
-
-                    <p>
-
-                        📍 Navi Mumbai, Maharashtra
-
-                    </p>
-
-                    <p>
-
-                        💼 LinkedIn
-
-                    </p>
-
-                </div>
-
-                <div class="mt-12">
-
-                    <a href="resume.pdf"
-                        download
-                        class="bg-white text-primary px-8 py-4 rounded-full font-bold">
-
-                        Download Resume
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div>
-
-                <form
-                    class="bg-white rounded-3xl p-10 text-gray-900">
-
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        class="w-full border rounded-xl p-4 mb-5">
-
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        class="w-full border rounded-xl p-4 mb-5">
-
-                    <textarea
-                        rows="6"
-                        placeholder="Message"
-                        class="w-full border rounded-xl p-4"></textarea>
-
-                    <button
-                        class="mt-6 w-full bg-primary text-white py-4 rounded-xl font-bold">
-
-                        Send Message
-
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
+<section
+id="contact">
 
 </section>
 
 <!-- ================= FOOTER ================= -->
 
-<footer class="bg-[#111] text-white py-12">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-
-            <div>
-
-                <h3 class="text-2xl font-black">
-
-                    Shalmal.
-
-                </h3>
-
-                <p class="text-gray-400 mt-2">
-
-                    Turning Data Into Growth.
-
-                </p>
-
-            </div>
-
-            <div class="flex gap-6">
-
-                <a href="#" class="hover:text-accent">LinkedIn</a>
-
-                <a href="mailto:shalmallande@gmail.com"
-                    class="hover:text-accent">
-
-                    Email
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <hr class="my-8 border-gray-700">
-
-        <div
-            class="flex flex-col md:flex-row justify-between items-center gap-4">
-
-            <p class="text-gray-400">
-
-                © 2026 Shalmal Lande. All Rights Reserved.
-
-            </p>
-
-            <p class="text-gray-400">
-
-                Built with ❤️ by Shalmal Lande
-
-            </p>
-
-        </div>
-
-    </div>
+<footer>
 
 </footer>
 
